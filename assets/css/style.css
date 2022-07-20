@@ -56,3 +56,17 @@ body {
 .scissors {
     float: right;
 }
+
+/* opponents choice and game result sytling section */
+
+.opponents-selection {
+    padding-top: 5%;
+    font-size: 150%;
+    text-align: center;
+}
+
+.result {
+    padding-top: 2.5%;
+    font-size: 150%;
+    text-align: center;
+}
