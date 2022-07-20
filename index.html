@@ -4,52 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google fonts -->
+    <meta name="description" content="A fun rock, paper, scissors game with a twist">
+    <!-- google fonts  -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock, Paper, Scissors Game</title>
 </head>
 
 <body>
+    <section class="full-game">
+        <h1 class="heading logo">Rock, Paper, Scissors</h1>
+        <div class="outer-game">
+            <div class="game-rules">
+                <h2 class="heading">Game Rules:</h2>
+                <ul id="rules-list">
+                    <li>
+                        Rock beats scissors.
+                    </li>
+                    <li>
+                        Scissors beats Paper.
+                    </li>
+                    <li>
+                        Paper beats Rock.
+                    </li>
+                </ul>
+            </div>
+            <h2>Select a button below:</h2>
+            <div class="button-icons">
+                <span class="icon rock"><i class="fa-solid fa-hand-back-fist"></i></span></span>
+                <span class="icon paper"><i class="fa-solid fa-hand"></i></span></span>
+                <span class="icon scissors"><i class="fa-solid fa-hand-scissors"></i></span></span>
+            </div> 
+            <div class="result"></div>
+        </div>
+    </section>
+    <section class="game-scores">
+        <span class="my-score">
+            <p>My Score: 0</p>
+        </span>
+        <span class="turns">
+            <p>Turns remaining: 0</p>
+        </span>
+        <span class="opponents-score">
+            <p>Opponents Score: 0</p>
+        </span>
+    </section>
 
+    <!-- font awesome and javsscript links -->
+    <script src="https://kit.fontawesome.com/a31ad1dfc9.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
-<section class="full-game">
-    <h1 class="heading logo">Rock, Paper, Scissors</h1>
-    <div class="outer-game">
-        <div class="game-rules">
-            <h2 class="heading">Game Rules:</h2>
-            <ul id="rules-list">
-                <li>
-                    Rock beats scissors.
-                </li>
-                <li>
-                    Scissors beats Paper.
-                </li>
-                <li>
-                    Paper beats Rock.
-                </li>
-            </ul>
-        </div>
-        <h2>Select a button below:</h2>
-        <div class="buttons">
-            <span class="btn" id="rock">Rock</span>
-            <span class="btn" id="paper">Paper</span>
-            <span class="btn" id="scissors">Scissors</span>
-        </div>
-        <div class="result"></div>
-    </div>
-</section>
-<section class="game-scores">
-    <span class="my-score">
-        <p>My Score: 0</p>
-    </span>
-    <span class="turns">
-        <p>Turns remaining: 0</p>
-    </span>
-    <span class="opponents-score">
-        <p>Opponents Score: 0</p>
-    </span>
-</section>
+
 
 </html>
