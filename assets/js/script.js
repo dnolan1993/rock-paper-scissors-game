@@ -11,11 +11,10 @@ document.addEventListener ('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             if(this.getAttribute('data-type') === 'rock' || this.getAttribute('data-type') === 'paper'
             || this.getAttribute('data-type') === 'scissors' || this.getAttribute('data-type') === 'john-wick'
-            || this.getAttribute('data-type') === 'chuck-norris'
-            ) {
+            || this.getAttribute('data-type') === 'chuck-norris') {
                 let selection = this.getAttribute('data-type');
                 runGame(selection)
-                alert (`${selection} works!`)
+                displayOpponentsChoice()
             } else if(this.getAttribute('data-type') === 'get-started'){
                 
             }
@@ -23,8 +22,26 @@ document.addEventListener ('DOMContentLoaded', function() {
     }
 });
 
+function computerSelection() {
+    let options = ['Rock', 'Paper', 'Scissors']
+    let i = 0
+    let randomSelection = options[Math.floor(Math.random() * options.length)];
+    console.log(randomSelection)
+    return randomSelection;
+};
+
 function runGame(selection) {
     if(selection === 'rock'){
-        alert('booyah!')
+        displayRockOutcome();
     }
+};
+
+function displayOpponentsChoice() {
+    let opponentSelectionOutput = document.getElementById('opponents-selection')
+    let opponentPlayed = computerSelection()
+    opponentSelectionOutput.innerHTML = `<p>Opponent Played: ${opponentPlayed}</p>`
 }
+
+function displayRockOutcome() {
+    alert('booyah!');
+};
