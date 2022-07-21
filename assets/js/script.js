@@ -14,7 +14,7 @@ document.addEventListener ('DOMContentLoaded', function() {
             || this.getAttribute('data-type') === 'chuck-norris'
             ) {
                 let selection = this.getAttribute('data-type');
-                console.log(selection)
+                runGame(selection)
                 alert (`${selection} works!`)
             } else if(this.getAttribute('data-type') === 'get-started'){
                 
@@ -22,3 +22,9 @@ document.addEventListener ('DOMContentLoaded', function() {
         })
     }
 });
+
+function runGame(selection) {
+    if(selection === 'rock'){
+        alert('booyah!')
+    }
+}
