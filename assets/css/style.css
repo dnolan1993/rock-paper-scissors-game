@@ -111,14 +111,8 @@ body {
 
 /* opponents choice and game result sytling section */
 
-.opponents-selection {
-    margin-top: 15%;
-    font-size: 150%;
-    text-align: center;
-}
-
-.result {
-    margin-top: 2.5%;
+.game-result div {
+    margin-top: 5%;
     font-size: 150%;
     text-align: center;
 }
