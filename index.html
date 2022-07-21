@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <!-- <section id="welcome-message">
+    <section id="welcome-message">
         <h2>Welcome to my Rock, Paper, Scissors game!</h2>
         <p>The game is simple! It's rock, paper, scissors with a twist, play to see what I mean!</p>
         <button id="get-started">Get Started!</button>
-    </section> -->
+    </section> 
     <section class="full-game">
         <h1 class="heading logo">Rock, Paper, Scissors</h1>
         <div class="outer-game">
@@ -36,24 +36,24 @@
             </div>
             <h2>Select a button below:</h2>
             <div class="button-icons">
-                <button data-type="rock" class="icon rock">
+                <button id="rock" data-type="rock" class="icon rock">
                     <i class="fa-solid fa-hand-back-fist"></i>
                 </button>
-                <button data-type="paper" class="icon paper">
+                <button id="paper" data-type="paper" class="icon paper">
                     <i class="fa-solid fa-hand"></i>
                 </button>
-                <button data-type="scissors" class="icon scissors"><i class="fa-solid fa-hand-scissors"></i>
+                <button id="scissors" data-type="scissors" class="icon scissors"><i class="fa-solid fa-hand-scissors"></i>
                 </button>
             </div>
             <div class="hidden-buttons">
-                <button data-type="john-wick" class="icon john-wick"><i class="fa-solid fa-user-tie"></i>
+                <button id="john-wick" data-type="john-wick" class="icon john-wick"><i class="fa-solid fa-user-tie"></i>
                 </button>
-                <button data-type="chuck-norris" class="icon chuck-norris"><i class="fa-solid fa-person-falling-burst"></i>
+                <button id="chuck-norris" data-type="chuck-norris" class="icon chuck-norris"><i class="fa-solid fa-person-falling-burst"></i>
                 </button>
             </div>
             <div class="game-result">
-                <div class="opponents-selection">Opponents choice: </div>
-                <div class="result">Result placeholder:</div>
+                <div id="opponents-selection">Opponent Played: </div>
+                <div id="result">Result placeholder:</div>
             </div>
         </div>
     </section>
