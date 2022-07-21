@@ -105,14 +105,25 @@ body {
     font-size: 6em;
 }
 
-.button-icons i:hover {
+.hidden-buttons {
+    display: none;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.hidden-buttons button {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.icon i:hover {
     font-size: 8em;
 }
 
 /* opponents choice and game result sytling section */
 
 .game-result div {
-    margin-top: 5%;
+    margin-top: 2.5%;
     font-size: 150%;
     text-align: center;
 }
