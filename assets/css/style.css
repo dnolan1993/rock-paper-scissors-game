@@ -23,8 +23,7 @@ body {
     border: solid #E7F6F2 1px;
     text-align: center;
     border-radius: 10px;
-    width: 100%;
-    max-width: 800px;
+    width: 60%;
     height: 30%;
     position: absolute;
     margin: 7.5% auto;
@@ -106,7 +105,7 @@ body {
 }
 
 .hidden-buttons {
-    display: none;
+    display: none; 
     text-align: center;
     margin-top: 5%;
 }
