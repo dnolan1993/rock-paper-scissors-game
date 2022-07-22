@@ -21,8 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+const options = ['Rock', 'Paper', 'Scissors']
+
 function computerSelection() {
-    let options = ['Rock', 'Paper', 'Scissors']
     let randomSelection = options[Math.floor(Math.random() * options.length)];
     console.log(randomSelection)
     return randomSelection;
@@ -41,6 +42,9 @@ function runGame(selection) {
     } else if (selection === 'john-wick') {
         displayOpponentsChoice()
         displayJohnWickOutcome()
+    }  else if (selection === 'chuck-norris') {
+        displayOpponentsChoice()
+        displayChuckNorrisOutcome()
     }
     };
 
@@ -58,6 +62,10 @@ function runGame(selection) {
             displayResult().innerHTML = "<p>You Lose! Paper beats Rock!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
             displayResult().innerHTML = "<p>You Win! Rock beats Scissors!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
+            displayResult().innerHTML = "<p>You Win! Rock breaks John Wicks pencil! John Wick tears Paper!.</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
+            displayResult().innerHTML = "<p>You Lose!  Because Chuck Norris.</p>";
         }
     };
 
@@ -68,6 +76,10 @@ function runGame(selection) {
             displayResult().innerHTML = "<p>It's a tie!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
             displayResult().innerHTML = "<p>You Lose! Scissors beats Paper!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
+            displayResult().innerHTML = "<p>You Lose! John Wick tears Paper!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
+            displayResult().innerHTML = "<p>You Lose! Because Chuck Norris.</p>";
         }
     };
 
@@ -78,6 +90,10 @@ function runGame(selection) {
             displayResult().innerHTML = "<p>You Win! Scissors beats Paper!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
             displayResult().innerHTML = "<p>It's a tie!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
+            displayResult().innerHTML = "<p>You Win! John Wick doesn't play with Scissors!.</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
+            displayResult().innerHTML = "<p>You Lose! Because Chuck Norris.</p>";
         }
     };
 
@@ -87,7 +103,25 @@ function runGame(selection) {
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
             displayResult().innerHTML = "<p>You Lose! John Wick tears Paper!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
-            displayResult().innerHTML = "<p>It's a tie! John Wick doesn't play with Scissors!</p>";
+            displayResult().innerHTML = "<p>You Lose! John Wick doesn't play with Scissors!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
+            displayResult().innerHTML = "<p>It's a tie! Because only John Wick can contant with John Wick.</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
+            displayResult().innerHTML = "<p>You Win! Because John Wick is a man of focus.</p>";
+        }
+    };
+
+    function displayChuckNorrisOutcome() {
+        if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
+            displayResult().innerHTML = "<p>You Win! Because Chuck Norris.</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
+            displayResult().innerHTML = "<p>You Win! Because Chuck Norris.</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
+            displayResult().innerHTML = "<p>You Win! Because Chuck Norris.</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
+            displayResult().innerHTML = "<p>You Lose! Because John Wick is a man of focus.</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
+            displayResult().innerHTML = "<p>You Win! Because Chuck Norris.</p>";
         }
     };
     
