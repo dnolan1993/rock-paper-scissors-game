@@ -35,6 +35,9 @@ function runGame(selection) {
   } else if(selection === 'paper') {
     displayOpponentsChoice()
     displayPaperOutcome()
+  } else if(selection === 'scissors') {
+    displayOpponentsChoice()
+    displayScissorsOutcome()
     }
 };
 
@@ -62,6 +65,16 @@ function displayPaperOutcome() {
          displayResult().innerHTML = "<p>It's a tie!</p>";
     } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
         displayResult().innerHTML = "<p>You Lose! Scissors beats Paper!</p>";
+    }
+}; 
+
+function displayScissorsOutcome() {
+    if ( document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
+        displayResult().innerHTML = "<p>You Lose! Rock beats Scissors!</p>";
+    } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
+         displayResult().innerHTML = "<p>You Win! Scissors beats Paper!</p>";
+    } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
+        displayResult().innerHTML = "<p>It's a tie!</p>";
     }
 }; 
 
