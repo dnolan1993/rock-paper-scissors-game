@@ -32,7 +32,10 @@ function runGame(selection) {
  if(selection === 'rock') {
   displayOpponentsChoice()
   displayRockOutcome()
-  } 
+  } else if(selection === 'paper') {
+    displayOpponentsChoice()
+    displayPaperOutcome()
+    }
 };
 
 function displayOpponentsChoice() {
@@ -51,6 +54,16 @@ function displayRockOutcome() {
         displayResult().innerHTML = "<p>You Win! Rock beats Scissors!</p>";
     }
 };
+
+function displayPaperOutcome() {
+    if ( document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
+        displayResult().innerHTML = "<p>You Win! Paper beats Rock!</p>";
+    } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
+         displayResult().innerHTML = "<p>It's a tie!</p>";
+    } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
+        displayResult().innerHTML = "<p>You Lose! Scissors beats Paper!</p>";
+    }
+}; 
 
 function displayResult() {
     let gameResultDisplay = document.getElementById('result');
