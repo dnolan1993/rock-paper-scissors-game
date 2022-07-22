@@ -29,57 +29,71 @@ function computerSelection() {
 };
 
 function runGame(selection) {
- if(selection === 'rock') {
-  displayOpponentsChoice()
-  displayRockOutcome()
-  } else if(selection === 'paper') {
-    displayOpponentsChoice()
-    displayPaperOutcome()
-  } else if(selection === 'scissors') {
-    displayOpponentsChoice()
-    displayScissorsOutcome()
+    if (selection === 'rock') {
+        displayOpponentsChoice()
+        displayRockOutcome()
+    } else if (selection === 'paper') {
+        displayOpponentsChoice()
+        displayPaperOutcome()
+    } else if (selection === 'scissors') {
+        displayOpponentsChoice()
+        displayScissorsOutcome()
+    } else if (selection === 'john-wick') {
+        displayOpponentsChoice()
+        displayJohnWickOutcome()
     }
-};
+    };
 
-function displayOpponentsChoice() {
-    let opponentSelectionOutput = document.getElementById('opponents-selection')
-    let opponentPlayed = computerSelection()
-    opponentSelectionOutput.innerHTML = `<p>Opponent Played: ${opponentPlayed}</p>`
-    return opponentSelectionOutput;
-}
-
-function displayRockOutcome() {
-    if ( document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
-        displayResult().innerHTML = "<p>It's a tie!</p>";
-    } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
-         displayResult().innerHTML = "<p>You Lose! Paper beats Rock!</p>";
-    } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
-        displayResult().innerHTML = "<p>You Win! Rock beats Scissors!</p>";
+    function displayOpponentsChoice() {
+        let opponentSelectionOutput = document.getElementById('opponents-selection')
+        let opponentPlayed = computerSelection()
+        opponentSelectionOutput.innerHTML = `<p>Opponent Played: ${opponentPlayed}</p>`
+        return opponentSelectionOutput;
     }
-};
 
-function displayPaperOutcome() {
-    if ( document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
-        displayResult().innerHTML = "<p>You Win! Paper beats Rock!</p>";
-    } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
-         displayResult().innerHTML = "<p>It's a tie!</p>";
-    } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
-        displayResult().innerHTML = "<p>You Lose! Scissors beats Paper!</p>";
+    function displayRockOutcome() {
+        if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
+            displayResult().innerHTML = "<p>It's a tie!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
+            displayResult().innerHTML = "<p>You Lose! Paper beats Rock!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
+            displayResult().innerHTML = "<p>You Win! Rock beats Scissors!</p>";
+        }
+    };
+
+    function displayPaperOutcome() {
+        if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
+            displayResult().innerHTML = "<p>You Win! Paper beats Rock!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
+            displayResult().innerHTML = "<p>It's a tie!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
+            displayResult().innerHTML = "<p>You Lose! Scissors beats Paper!</p>";
+        }
+    };
+
+    function displayScissorsOutcome() {
+        if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
+            displayResult().innerHTML = "<p>You Lose! Rock beats Scissors!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
+            displayResult().innerHTML = "<p>You Win! Scissors beats Paper!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
+            displayResult().innerHTML = "<p>It's a tie!</p>";
+        }
+    };
+
+    function displayJohnWickOutcome() {
+        if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
+            displayResult().innerHTML = "<p>You Win! Rock breaks John Wicks pencil!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
+            displayResult().innerHTML = "<p>You Lose! John Wick tears Paper!</p>";
+        } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
+            displayResult().innerHTML = "<p>It's a tie! John Wick doesn't play with Scissors!</p>";
+        }
+    };
+    
+
+    function displayResult() {
+        let gameResultDisplay = document.getElementById('result');
+        gameResultDisplay.innerHTML = '';
+        return gameResultDisplay;
     }
-}; 
-
-function displayScissorsOutcome() {
-    if ( document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
-        displayResult().innerHTML = "<p>You Lose! Rock beats Scissors!</p>";
-    } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
-         displayResult().innerHTML = "<p>You Win! Scissors beats Paper!</p>";
-    } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
-        displayResult().innerHTML = "<p>It's a tie!</p>";
-    }
-}; 
-
-function displayResult() {
-    let gameResultDisplay = document.getElementById('result');
-    gameResultDisplay.innerHTML = '';
-    return gameResultDisplay;
-}
