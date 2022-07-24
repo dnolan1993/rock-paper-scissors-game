@@ -57,71 +57,71 @@ function runGame(selection) {
 
     function displayRockOutcome() {
         if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
-            displayResult().innerHTML = "<p>It's a tie!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>It's a tie!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
-            displayResult().innerHTML = "<p>You Lose! Paper beats Rock!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Paper beats Rock!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
-            displayResult().innerHTML = "<p>You Win! Rock beats Scissors!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Rock beats Scissors!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
-            displayResult().innerHTML = "<p>You Win! Rock breaks John Wicks pencil! John Wick tears Paper!.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Rock breaks John Wicks pencil! John Wick tears Paper!.</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
-            displayResult().innerHTML = "<p>You Lose!  Because Chuck Norris.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Because Chuck Norris.</p>";
         }
     };
 
     function displayPaperOutcome() {
         if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
-            displayResult().innerHTML = "<p>You Win! Paper beats Rock!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Paper beats Rock!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
-            displayResult().innerHTML = "<p>It's a tie!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>It's a tie!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
-            displayResult().innerHTML = "<p>You Lose! Scissors beats Paper!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Scissors beats Paper!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
-            displayResult().innerHTML = "<p>You Lose! John Wick tears Paper!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>John Wick tears Paper!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
-            displayResult().innerHTML = "<p>You Lose! Because Chuck Norris.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Because Chuck Norris.</p>";
         }
     };
 
     function displayScissorsOutcome() {
         if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
-            displayResult().innerHTML = "<p>You Lose! Rock beats Scissors!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Rock beats Scissors!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
-            displayResult().innerHTML = "<p>You Win! Scissors beats Paper!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Scissors beats Paper!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
-            displayResult().innerHTML = "<p>It's a tie!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>It's a tie!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
-            displayResult().innerHTML = "<p>You Win! John Wick doesn't play with Scissors!.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>John Wick doesn't play with Scissors!.</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
-            displayResult().innerHTML = "<p>You Lose! Because Chuck Norris.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Because Chuck Norris.</p>";
         }
     };
 
     function displayJohnWickOutcome() {
         if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
-            displayResult().innerHTML = "<p>You Win! Rock breaks John Wicks pencil!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Rock breaks John Wicks pencil!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
-            displayResult().innerHTML = "<p>You Lose! John Wick tears Paper!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Lose</p><p>John Wick tears Paper!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
-            displayResult().innerHTML = "<p>You Lose! John Wick doesn't play with Scissors!</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>John Wick doesn't play with Scissors!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
-            displayResult().innerHTML = "<p>It's a tie! Because only John Wick can contant with John Wick.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>It's a tie!</p><p>Because only John Wick can contant with John Wick.</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
-            displayResult().innerHTML = "<p>You Win! Because John Wick is a man of focus.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because John Wick is a man of focus.</p>";
         }
     };
 
     function displayChuckNorrisOutcome() {
         if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
-            displayResult().innerHTML = "<p>You Win! Because Chuck Norris.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because Chuck Norris.</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
-            displayResult().innerHTML = "<p>You Win! Because Chuck Norris.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because Chuck Norris.</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
-            displayResult().innerHTML = "<p>You Win! Because Chuck Norris.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because Chuck Norris.</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
-            displayResult().innerHTML = "<p>You Lose! Because John Wick is a man of focus.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Because John Wick is a man of focus.</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
-            displayResult().innerHTML = "<p>You Win! Because Chuck Norris.</p>";
+            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because Chuck Norris.</p>";
         }
     };
     
