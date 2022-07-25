@@ -104,13 +104,13 @@ body {
     font-size: 6em;
 }
 
-.hidden-buttons {
+#hidden-buttons {
     display: none; 
     text-align: center;
     margin-top: 5%;
 }
 
-.hidden-buttons button {
+#hidden-buttons button {
     margin-left: 7.5%;
     margin-right: 7.5%;
 }

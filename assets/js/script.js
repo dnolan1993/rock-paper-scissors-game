@@ -18,7 +18,9 @@ function gamePlayClick() {
                 let selection = this.getAttribute('data-type');
                 runGame(selection)
                 displayTurnsRemaining()
-                myScore()
+                DisplayMyScore()
+                displayOpponentScore()
+                displayHiddenChoices()
             } else if (this.getAttribute('data-type') === 'get-started') {
 
             }
@@ -136,7 +138,6 @@ function runGame(selection) {
 
     function displayResult() {
         let gameResultDisplay = document.getElementById('overall-outcome');
-       /* gameResultDisplay.innerHTML = ''; */
         return gameResultDisplay;
     }
 
@@ -145,10 +146,25 @@ function runGame(selection) {
         document.getElementById("remaining-turns").innerText = --turnsRemaining;
     };
 
-    function myScore() {
-        let currentScore = parseInt(document.getElementById("my-current-score").innerText);
+    function DisplayMyScore() {
+        let myCurrentScore = parseInt(document.getElementById("my-current-score").innerText);
         let resultNeeded = document.getElementById('result-needed').innerText;
         if (resultNeeded === 'You Win!'){
-            document.getElementById("my-current-score").innerText = ++currentScore;
+            document.getElementById("my-current-score").innerText = ++myCurrentScore;
+        }
+    }
+
+    function displayOpponentScore() {
+        let opponentsCurrentScore = parseInt(document.getElementById("opponents-current-score").innerText);
+        let resultNeeded = document.getElementById('result-needed').innerText;
+        if (resultNeeded === 'You Lose!'){
+            document.getElementById("opponents-current-score").innerText = ++opponentsCurrentScore;
+        }
+    }
+
+    function displayHiddenChoices() {
+        let hiddenIcons = document.getElementById('hidden-buttons')
+        if(document.getElementById("remaining-turns").innerText <= 5) {
+            hiddenIcons.style.display = 'inherit';
         }
     }
