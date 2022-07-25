@@ -18,6 +18,7 @@ function gamePlayClick() {
                 let selection = this.getAttribute('data-type');
                 runGame(selection)
                 displayTurnsRemaining()
+                myScore()
             } else if (this.getAttribute('data-type') === 'get-started') {
 
             }
@@ -143,3 +144,11 @@ function runGame(selection) {
         let turnsRemaining = parseInt(document.getElementById("remaining-turns").innerText); 
         document.getElementById("remaining-turns").innerText = --turnsRemaining;
     };
+
+    function myScore() {
+        let currentScore = parseInt(document.getElementById("my-current-score").innerText);
+        let resultNeeded = document.getElementById('result-needed').innerText;
+        if (resultNeeded === 'You Win!'){
+            document.getElementById("my-current-score").innerText = ++currentScore;
+        }
+    }
