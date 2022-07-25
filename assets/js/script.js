@@ -166,5 +166,6 @@ function runGame(selection) {
         let hiddenIcons = document.getElementById('hidden-buttons')
         if(document.getElementById("remaining-turns").innerText <= 5) {
             hiddenIcons.style.display = 'inherit';
+            options.push('John Wick', 'Chuck Norris')
         }
     }
