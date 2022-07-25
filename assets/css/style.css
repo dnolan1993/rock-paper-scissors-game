@@ -50,6 +50,42 @@ body {
     width: 27.5%;
 }
 
+/* End of game message style */
+
+#end-of-game-message {
+    display: none;
+    z-index: 1;
+    background-color: #A5C9CA;
+    border: solid #E7F6F2 1px;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+    height: 30%;
+    position: absolute;
+    margin: 7.5% auto;
+    padding: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+#play-again {
+    background-color: #395B64;
+    color: #E7F6F2;
+    border-radius: 10px;
+    height: 25%;
+    width: 25%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#end-of-game-message button:hover {
+    height: 27.5%;
+    width: 27.5%;
+}
+
 /* full-game section style containing game */
 .full-game {
     background-color: #395B64;
