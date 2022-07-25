@@ -21,6 +21,7 @@ function gamePlayClick() {
                 DisplayMyScore()
                 displayOpponentScore()
                 displayHiddenChoices()
+                endOfGame()
             } else if (this.getAttribute('data-type') === 'get-started') {
 
             }
@@ -170,4 +171,21 @@ function runGame(selection) {
         }
     }
 
-    
+    function endOfGame() {
+        let endOfGameMessage = document.getElementById('end-of-game-message');
+        let myFinalScore = parseInt(document.getElementById("my-current-score").innerText);
+        let opponentsFinalScore = parseInt(document.getElementById("opponents-current-score").innerText);
+        let finalScores =  document.getElementById('final-scores');
+        let finalResult = document.getElementById('final-result');
+            if(document.getElementById("remaining-turns").innerText <= 0) {
+                endOfGameMessage.style.display = 'inherit';
+                finalScores.innerText = `Your Score was ${myFinalScore} and your opponet scored ${opponentsFinalScore}`
+                    if(myFinalScore > opponentsFinalScore) {
+                        finalResult.innerText = "Congratulations! You've Won!";
+                    } else if(myFinalScore < opponentsFinalScore) {
+                        finalResult.innerText = "You have lost! ";
+                    } else if(myFinalScore === opponentsFinalScore) {
+                        finalResult.innerText = "It's a Tie! ";
+                    }
+        }
+    }
