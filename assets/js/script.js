@@ -5,7 +5,10 @@ getStartedBtn.addEventListener("click", function () {
     welcomeMessage.style.display = 'none';
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+gamePlayClick()
+
+function gamePlayClick() {
+    document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByTagName('button')
     for (let button of buttons) {
         button.addEventListener('click', function () {
@@ -14,18 +17,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.getAttribute('data-type') === 'chuck-norris') {
                 let selection = this.getAttribute('data-type');
                 runGame(selection)
+                displayTurnsRemaining()
             } else if (this.getAttribute('data-type') === 'get-started') {
 
             }
         })
     }
 });
+};
+
+
 
 const options = ['Rock', 'Paper', 'Scissors']
 
 function computerSelection() {
     let randomSelection = options[Math.floor(Math.random() * options.length)];
-    console.log(randomSelection)
     return randomSelection;
 };
 
@@ -47,25 +53,20 @@ function runGame(selection) {
         displayChuckNorrisOutcome()
     }
     };
-
-    function displayOpponentsChoice() {
-        let opponentSelectionOutput = document.getElementById('opponents-selection')
-        let opponentPlayed = computerSelection()
-        opponentSelectionOutput.innerHTML = `<p>Opponent Played: ${opponentPlayed}</p>`
-        return opponentSelectionOutput;
-    }
+    
+    displayMyScore()
 
     function displayRockOutcome() {
         if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
-            displayResult().innerHTML = "<p id = 'result-needed'>It's a tie!</p>";
+            displayResult().innerHTML = "<p data-type='tie' id = 'result-needed'>It's a tie!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Paper</p>') {
-            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Paper beats Rock!</p>";
+            displayResult().innerHTML = "<p data-type='loss' id = 'result-needed'>You Lose!</p><p>Paper beats Rock!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
-            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Rock beats Scissors!</p>";
+            displayResult().innerHTML = "<p data-type='win' id = 'result-needed'>You Win!</p><p>Rock beats Scissors!</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
-            displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Rock breaks John Wicks pencil! John Wick tears Paper!.</p>";
+            displayResult().innerHTML = "<p data-type='win' id = 'result-needed'>You Win!</p><p>Rock breaks John Wicks pencil! John Wick tears Paper!.</p>";
         } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
-            displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Because Chuck Norris.</p>";
+            displayResult().innerHTML = "<p data-type='loss' id = 'result-needed'>You Lose!</p><p>Because Chuck Norris.</p>";
         }
     };
 
@@ -124,10 +125,21 @@ function runGame(selection) {
             displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because Chuck Norris.</p>";
         }
     };
-    
+ 
+    function displayOpponentsChoice() {
+        let opponentSelectionOutput = document.getElementById('opponents-selection')
+        let opponentPlayed = computerSelection()
+        opponentSelectionOutput.innerHTML = `<p>Opponent Played: ${opponentPlayed}</p>`
+        return opponentSelectionOutput;
+    }
 
     function displayResult() {
-        let gameResultDisplay = document.getElementById('result');
-        gameResultDisplay.innerHTML = '';
+        let gameResultDisplay = document.getElementById('overall-outcome');
+       /* gameResultDisplay.innerHTML = ''; */
         return gameResultDisplay;
     }
+
+    function displayTurnsRemaining() {
+        let turnsRemaining = parseInt(document.getElementById("remaining-turns").innerText); 
+        document.getElementById("remaining-turns").innerText = --turnsRemaining;
+    };
