@@ -53,14 +53,14 @@ body {
 /* End of game message style */
 
 #end-of-game-message {
-    display: none;
+    display: none; 
     z-index: 1;
     background-color: #A5C9CA;
-    border: solid #E7F6F2 1px;
+    border: solid #395B64 1px;
     text-align: center;
     border-radius: 10px;
     width: 60%;
-    height: 40%;
+    height: 50%;
     position: absolute;
     margin: 7.5% auto;
     padding: 30px;
@@ -75,14 +75,14 @@ body {
     background-color: #395B64;
     color: #E7F6F2;
     border-radius: 10px;
-    height: 25%;
+    height: 15%;
     width: 25%;
     margin-top: 5%;
     text-align: center;
 }
 
 #end-of-game-message button:hover {
-    height: 27.5%;
+    height: 17.5%;
     width: 27.5%;
 }
 
@@ -121,12 +121,12 @@ body {
     font-size: 125%;
     margin-left: 32.5%;
 }
- 
+
 /* style of interactive buttons */
 
 .button-icons {
     margin-top: 5%;
-   text-align: center;
+    text-align: center;
 }
 
 .button-icons button {
@@ -141,7 +141,7 @@ body {
 }
 
 #hidden-buttons {
-    display: none; 
+    display: none;
     text-align: center;
     margin-top: 5%;
 }
@@ -167,7 +167,7 @@ body {
     margin-top: 1%;
 }
 
-/* style for game-scores section */ 
+/* style for game-scores section */
 .game-scores {
     margin-left: 10%;
     text-align: center;
