@@ -180,7 +180,7 @@ function endOfGame() {
     let finalResult = document.getElementById('final-result');
     if (document.getElementById("remaining-turns").innerText <= 0) {
         endOfGameMessage.style.display = 'inherit';
-        finalScores.innerText = `Your Score was ${myFinalScore} and your opponet scored ${opponentsFinalScore}`
+        finalScores.innerText = `Your Score was ${myFinalScore} and your opponent scored ${opponentsFinalScore}`
         if (myFinalScore > opponentsFinalScore) {
             finalResult.innerText = "Congratulations! You've Won!";
         } else if (myFinalScore < opponentsFinalScore) {
@@ -201,5 +201,6 @@ function playAgain() {
         document.getElementById("opponents-current-score").innerText = 0;
         document.getElementById('end-of-game-message').style.display = 'none';
         document.getElementById('hidden-buttons').style.display = 'none';
+        options.splice(3, 2);
     })
-}
+};
