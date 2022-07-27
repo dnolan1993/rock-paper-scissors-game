@@ -12,9 +12,7 @@ function gamePlayClick() {
         let buttons = document.getElementsByTagName('button')
         for (let button of buttons) {
             button.addEventListener('click', function () {
-                if (this.getAttribute('data-type') === 'rock' || this.getAttribute('data-type') === 'paper' ||
-                    this.getAttribute('data-type') === 'scissors' || this.getAttribute('data-type') === 'john-wick' ||
-                    this.getAttribute('data-type') === 'chuck-norris') {
+                if (this.getAttribute('data-role') === 'character') {
                     let selection = this.getAttribute('data-type');
                     runGame(selection)
                     displayTurnsRemaining()
