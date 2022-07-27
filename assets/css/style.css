@@ -46,8 +46,8 @@ body {
 }
 
 #welcome-message button:hover {
-    height: 27.5%;
-    width: 27.5%;
+    transform: scale(1.5);
+    transition: transform 150ms ease-in-out;
 }
 
 /* End of game message style */
@@ -82,8 +82,8 @@ body {
 }
 
 #end-of-game-message button:hover {
-    height: 17.5%;
-    width: 27.5%;
+    transform: scale(1.5);
+    transition: transform 150ms ease-in-out;
 }
 
 /* full-game section style containing game */
