@@ -16,7 +16,7 @@ function gamePlayClick() {
                     let selection = this.getAttribute('data-type');
                     runGame(selection)
                     displayTurnsRemaining()
-                    DisplayMyScore()
+                    displayYourScore()
                     displayOpponentScore()
                     displayHiddenChoices()
                     endOfGame()
@@ -56,8 +56,6 @@ function runGame(selection) {
         displayChuckNorrisOutcome()
     }
 };
-
-displayMyScore()
 
 function displayRockOutcome() {
     if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
@@ -146,11 +144,11 @@ function displayTurnsRemaining() {
     document.getElementById("remaining-turns").innerText = --turnsRemaining;
 };
 
-function DisplayMyScore() {
-    let myCurrentScore = parseInt(document.getElementById("my-current-score").innerText);
+function displayYourScore() {
+    let yourCurrentScore = parseInt(document.getElementById('your-current-score').innerText);
     let resultNeeded = document.getElementById('result-needed').innerText;
     if (resultNeeded === 'You Win!') {
-        document.getElementById("my-current-score").innerText = ++myCurrentScore;
+        document.getElementById('your-current-score').innerText = ++yourCurrentScore;
     }
 }
 
@@ -172,7 +170,7 @@ function displayHiddenChoices() {
 
 function endOfGame() {
     let endOfGameMessage = document.getElementById('end-of-game-message');
-    let myFinalScore = parseInt(document.getElementById("my-current-score").innerText);
+    let myFinalScore = parseInt(document.getElementById("your-current-score").innerText);
     let opponentsFinalScore = parseInt(document.getElementById("opponents-current-score").innerText);
     let finalScores = document.getElementById('final-scores');
     let finalResult = document.getElementById('final-result');
@@ -195,7 +193,7 @@ function playAgain() {
         document.getElementById('overall-outcome').innerText = '';
         document.getElementById('opponents-selection').innerText = '';
         document.getElementById("remaining-turns").innerText = 10;
-        document.getElementById("my-current-score").innerText = 0;
+        document.getElementById("your-current-score").innerText = 0;
         document.getElementById("opponents-current-score").innerText = 0;
         document.getElementById('end-of-game-message').style.display = 'none';
         document.getElementById('hidden-buttons').style.visibility = 'hidden';
