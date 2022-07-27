@@ -167,7 +167,7 @@ function displayOpponentScore() {
 function displayHiddenChoices() {
     let hiddenIcons = document.getElementById('hidden-buttons')
     if (document.getElementById("remaining-turns").innerText <= 5) {
-        hiddenIcons.style.display = 'inherit';
+        hiddenIcons.style.visibility = 'visible';
         options.push('John Wick', 'Chuck Norris')
     }
 }
@@ -200,7 +200,7 @@ function playAgain() {
         document.getElementById("my-current-score").innerText = 0;
         document.getElementById("opponents-current-score").innerText = 0;
         document.getElementById('end-of-game-message').style.display = 'none';
-        document.getElementById('hidden-buttons').style.display = 'none';
+        document.getElementById('hidden-buttons').style.visibility = 'hidden';
         options.splice(3, 2);
     })
 };
