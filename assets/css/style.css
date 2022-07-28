@@ -289,3 +289,9 @@ body {
         
     }
 }
+
+@media screen and (max-width: 540px) {
+    #end-of-game-message {
+        height: 42.5%;
+    }
+}
