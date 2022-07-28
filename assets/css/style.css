@@ -237,6 +237,12 @@ body {
     }
 }
 
+@media screen and (max-width: 991px) {
+    #end-of-game-message {
+        height: 42.5%;
+    }
+}
+
 @media screen and (max-width: 901px) {
     #welcome-message {
         width: 80%;
@@ -244,6 +250,7 @@ body {
     
     #end-of-game-message {
         width: 80%;
+        height: 47.5%;
     }
     
     .game-rules {
@@ -266,6 +273,7 @@ body {
 
     #end-of-game-message {
         width: 90%;
+        height: 45%;
     }
 }
 
