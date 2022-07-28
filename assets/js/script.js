@@ -173,18 +173,18 @@ function displayHiddenChoices() {
 
 function endOfGame() {
     let endOfGameMessage = document.getElementById('end-of-game-message');
-    let myFinalScore = parseInt(document.getElementById("your-current-score").innerText);
+    let yourFinalScore = parseInt(document.getElementById("your-current-score").innerText);
     let opponentsFinalScore = parseInt(document.getElementById("opponents-current-score").innerText);
     let finalScores = document.getElementById('final-scores');
     let finalResult = document.getElementById('final-result');
     if (document.getElementById("remaining-turns").innerText <= 0) {
         endOfGameMessage.style.display = 'inherit';
-        finalScores.innerText = `Your Score was ${myFinalScore} and your opponent scored ${opponentsFinalScore}`
-        if (myFinalScore > opponentsFinalScore) {
+        finalScores.innerText = `Your Score was ${yourFinalScore} and your opponent scored ${opponentsFinalScore}`
+        if (yourFinalScore > opponentsFinalScore) {
             finalResult.innerText = "Congratulations! You've Won!";
-        } else if (myFinalScore < opponentsFinalScore) {
+        } else if (yourFinalScore < opponentsFinalScore) {
             finalResult.innerText = "You have lost! ";
-        } else if (myFinalScore === opponentsFinalScore) {
+        } else if (yourFinalScore === opponentsFinalScore) {
             finalResult.innerText = "It's a Tie! ";
         }
     }
@@ -196,7 +196,6 @@ function playAgain() {
         document.getElementById('overall-outcome').innerText = '';
         document.getElementById('opponents-selection').innerText = '';
         turnsRemaining = 10;
-        /*document.getElementById('turns-remaining').innerText = turnsRemaining.value;*/
         yourCurrentScore = 0;
         opponentsCurrentScore = 0;
         document.getElementById('end-of-game-message').style.display = 'none';
