@@ -330,8 +330,6 @@ body {
         height: 570px;
     }
 
-    
-
     .button-icons button {
         margin-left: 5%;
         margin-right: 5%;
@@ -418,4 +416,17 @@ body {
     }
 }
 
+@media screen and (max-width: 337px) {
+    #end-of-game-message {
+        margin-top: 55%;
+    }
+    
+    .game-rules {
+        height: 190px;
+    }
+
+    .full-game {
+        height: 710px;
+    }
+}
 
