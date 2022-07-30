@@ -291,7 +291,131 @@ body {
 }
 
 @media screen and (max-width: 540px) {
+    #get-started {
+        width: 30%;
+    }
+
     #end-of-game-message {
+        margin-top: 20%;
         height: 42.5%;
     }
+    
+    #play-again {
+        width: 30%;
+    }
+
+    .button-icons {
+        margin-top: 10%;
+    }
+
+    #hidden-buttons {
+        margin-top: 17.5%;
+    }
 }
+
+@media screen and (max-width: 450px) {
+    #get-started {
+        width: 40%;
+    }
+
+    #end-of-game-message {
+        margin-top: 22.5%;
+    }
+
+    #play-again {
+        width: 40%;
+    }
+
+    .full-game {
+        height: 570px;
+    }
+
+    
+
+    .button-icons button {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #hidden-buttons {
+        margin-top: 20%;
+    }
+
+    .game-scores span {
+        display: block;
+    }
+
+    #your-score {
+        float: none;
+        padding: 0;
+    }
+
+    #opponents-score {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #welcome-message {
+        height: 60%;
+    }
+    
+    #get-started {
+        width: 50%;
+    }
+
+    #end-of-game-message {
+        margin-top: 30%;
+    }
+    
+    .full-game {
+        height: 615px;
+    }
+
+    .game-rules {
+        width: 90%;
+        height: 170px;
+    }
+
+    #hidden-buttons {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    #end-of-game-message {
+        margin-top: 50%;
+    }
+    
+    #play-again {
+       width: 50%;
+    }
+
+    .full-game {
+        height: 670px;
+    }
+
+    .button-icons button {
+        display: block;
+        margin-top: 7.5%;
+    }
+
+    #hidden-buttons {
+        margin-top: 0;
+        float: right;
+    }
+
+    #john-wick {
+        margin-top: 10%;
+    }
+
+    #chuck-norris {
+        margin-top: 25%;
+    }
+    
+    .game-result {
+        margin-top: 75%;
+    }
+}
+
+

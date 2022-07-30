@@ -113,7 +113,7 @@ function displayJohnWickOutcome() {
     } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Scissors</p>') {
         displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>John Wick doesn't play with Scissors!</p>";
     } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
-        displayResult().innerHTML = "<p id = 'result-needed'>It's a tie!</p><p>Because only John Wick can contant with John Wick.</p>";
+        displayResult().innerHTML = "<p id = 'result-needed'>It's a tie!</p><p>Because only John Wick can content with John Wick.</p>";
     } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
         displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because John Wick is a man of focus.</p>";
     }
