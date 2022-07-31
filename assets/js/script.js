@@ -10,6 +10,7 @@ let yourCurrentScore = parseInt(document.getElementById('your-current-score').in
 yourCurrentScore = 0;
 let opponentsCurrentScore = parseInt(document.getElementById("opponents-current-score").innerText);
 opponentsCurrentScore = 0;
+let opponentSelectionOutput = document.getElementById('opponents-selection');
 
 //Event listener declarations
 getStartedBtn.addEventListener("click", function () {
@@ -39,11 +40,13 @@ function gamePlayClick() {
     });
 };
 
+//Function for opponents randomly selected play
 function computerSelection() {
     let randomSelection = options[Math.floor(Math.random() * options.length)];
     return randomSelection;
 };
 
+//Function to select correct outcome display function to run
 function runGame(selection) {
     if (selection === 'rock') {
         displayOpponentsChoice()
@@ -63,6 +66,7 @@ function runGame(selection) {
     }
 };
 
+//Outcome functions to
 function displayRockOutcome() {
     if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
         displayResult().innerHTML = "<p data-type='tie' id = 'result-needed'>It's a tie!</p>";
@@ -129,12 +133,12 @@ function displayChuckNorrisOutcome() {
     } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: John Wick</p>') {
         displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Because John Wick is a man of focus.</p>";
     } else if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Chuck Norris</p>') {
-        displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because Chuck Norris.</p>";
+        displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Two Chuck Norris' has created a second Big Bang!</p>";
     }
 };
 
 function displayOpponentsChoice() {
-    let opponentSelectionOutput = document.getElementById('opponents-selection');
+    
     let opponentPlayed = computerSelection();
     opponentSelectionOutput.innerHTML = `<p>Opponent Played: ${opponentPlayed}</p>`;
     return opponentSelectionOutput;
