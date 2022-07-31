@@ -125,7 +125,17 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
   Game Title 
    <ul>
     <li>
-     The displays the game name at the top of the page, easily visible to the user.
+     The Game Title displays the game name at the top of the page, easily visible to the user.
     </li>
 </ul>
 <img src="documentation/game-title.png" alt="Screenshot of the game title of game">
+
+<ul>
+ <li>
+  Game Rules
+   <ul>
+    <li>
+     The Game Rules section displays the basic rules of the game to the user and adds 'The rest is a mystery!' letting the user know the game has a twist.
+    </li>
+</ul>
+<img src="documentation/game-rules.png" alt="Screenshot of the game rules section">
