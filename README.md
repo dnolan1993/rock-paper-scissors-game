@@ -119,3 +119,13 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
  </li>
 </ul>
 <img src="documentation/welcome-message.png" alt="Screenshot of the welcome message">
+
+<ul>
+ <li>
+  Game Title 
+   <ul>
+    <li>
+     The displays the game name at the top of the page, easily visible to the user.
+    </li>
+</ul>
+<img src="documentation/game-title.png" alt="Screenshot of the game title of game">
