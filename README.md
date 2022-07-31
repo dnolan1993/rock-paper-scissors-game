@@ -4,7 +4,7 @@
 
 The Rock, Paper, Scissors Game is a webpage that contains a rock, paper, scissors game with a twist, The user can choose from rock, paper or scissors at the begining of the game, as they progress through the game, two new options will be added half way through to game to make the computers choice more unpredictable.
 
-(Add screenshot preview of responsive design across different device sizes here.)
+<img src="assets/images/webpage-device-preview.png" alt="Screenshot of webpage on various different screen sizes">
 
 <br>
 
