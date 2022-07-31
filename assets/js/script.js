@@ -143,7 +143,7 @@ function displayOpponentsChoice() {
 function displayResult() {
     let gameResultDisplay = document.getElementById('overall-outcome');
     return gameResultDisplay;
-}
+};
 
 function displayTurnsRemaining() {
     document.getElementById("remaining-turns").innerText = --turnsRemaining;
@@ -154,7 +154,8 @@ function displayYourScore() {
     if (resultNeeded === 'You Win!') {
         document.getElementById("your-current-score").innerText = ++yourCurrentScore;
     }
-}
+};
+
 
 function displayOpponentScore() {
     let resultNeeded = document.getElementById('result-needed').innerText;
@@ -195,12 +196,15 @@ function playAgain() {
     playAgainBtn.addEventListener('click', function () {
         document.getElementById('overall-outcome').innerText = '';
         document.getElementById('opponents-selection').innerText = '';
-        turnsRemaining = 10;
-        yourCurrentScore = 0;
-        opponentsCurrentScore = 0;
         document.getElementById('end-of-game-message').style.display = 'none';
         document.getElementById('hidden-buttons').style.visibility = 'hidden';
-        options.splice(3, 2);
+        options.splice(3, 2);  
+        turnsRemaining = 10;
+        document.getElementById("remaining-turns").innerText = turnsRemaining;
+        yourCurrentScore = 0;
+        document.getElementById("your-current-score").innerText = yourCurrentScore;
+        opponentsCurrentScore = 0;
+        document.getElementById('opponents-current-score').innerText = opponentsCurrentScore;
     })
 };
 
