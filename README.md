@@ -127,6 +127,8 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
     <li>
      The Game Title displays the game name at the top of the page, easily visible to the user.
     </li>
+   </ul>
+ </li>
 </ul>
 <img src="documentation/game-title.png" alt="Screenshot of the game title of game">
 
@@ -137,5 +139,24 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
     <li>
      The Game Rules section displays the basic rules of the game to the user and adds 'The rest is a mystery!' letting the user know the game has a twist.
     </li>
+   </ul>
+ </li>
 </ul>
 <img src="documentation/game-rules.png" alt="Screenshot of the game rules section">
+
+<ul>
+ <li>
+  Game Icons
+   <ul>
+    <li>
+     The Game Icons are the buttons where the user can select which character they want to play against the opponent.
+    </li>
+    <li>
+     When hovered over the icons enlarge to show the user clearly which character they are chosing.
+    </li>
+   </ul>
+ </li>
+</ul>
+<img src="documentation/game-icons.png" alt="Screenshot of the game icon buttons">
+
+
