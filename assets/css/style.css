@@ -53,7 +53,7 @@ body {
 /* End of game message style */
 
 #end-of-game-message {
-    display: none; 
+    display: none;
     z-index: 1;
     background-color: #A5C9CA;
     border: solid #8B1333 3px;
@@ -210,12 +210,20 @@ body {
 /* Media queries */
 
 @media screen and (max-width: 1200px) {
+    body {
+        max-height: 780px;
+    }
+
     .game-rules {
         width: 50%;
     }
-    
+
     #hidden-buttons {
         margin-top: 10%;
+    }
+
+    #end-of-game-message {
+        margin-top: 15%;
     }
 }
 
@@ -229,6 +237,7 @@ body {
     }
 
     #end-of-game-message {
+        margin-top: 12.5%;
         width: 70%;
         height: 45%;
     }
@@ -248,16 +257,17 @@ body {
     #welcome-message {
         width: 80%;
     }
-    
+
     #end-of-game-message {
+        margin-top: 15%;
         width: 80%;
         height: 47.5%;
     }
-    
+
     .game-rules {
         width: 70%;
     }
-    
+
     #hidden-buttons {
         margin-top: 15%;
     }
@@ -286,7 +296,7 @@ body {
     #get-started {
         height: 20%;
         margin-top: 15%;
-        
+
     }
 }
 
@@ -299,7 +309,7 @@ body {
         margin-top: 20%;
         height: 42.5%;
     }
-    
+
     #play-again {
         width: 30%;
     }
@@ -357,7 +367,7 @@ body {
     #welcome-message {
         height: 60%;
     }
-    
+
     #get-started {
         width: 50%;
     }
@@ -365,7 +375,7 @@ body {
     #end-of-game-message {
         margin-top: 30%;
     }
-    
+
     .full-game {
         height: 615px;
     }
@@ -384,9 +394,9 @@ body {
     #end-of-game-message {
         margin-top: 50%;
     }
-    
+
     #play-again {
-       width: 50%;
+        width: 50%;
     }
 
     .full-game {
@@ -410,7 +420,7 @@ body {
     #chuck-norris {
         margin-top: 25%;
     }
-    
+
     .game-result {
         margin-top: 75%;
     }
@@ -420,7 +430,7 @@ body {
     #end-of-game-message {
         margin-top: 55%;
     }
-    
+
     .game-rules {
         height: 190px;
     }
@@ -429,4 +439,3 @@ body {
         height: 710px;
     }
 }
-
