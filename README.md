@@ -103,7 +103,19 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
 ## Features
 ### Existing Features
 <ul>
+ <li>
+  Welcome message 
+   <ul>
     <li>
-    
+     The welcome message displays a brief message to the user what the game is and that the game has a twist.
     </li>
+    <li>
+     When the 'Get started!' button is hovered over it enlarges showing the user they can select the button to start the game.
+    </li>
+    <li>
+     Once the 'Get started!' button is clicked the message is removed and the user can begin to play.
+    </li>
+   </ul>
+ </li>
 </ul>
+<img src="documentation/welcome-message.png" alt="Screenshot of the welcome message">
