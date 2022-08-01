@@ -18,6 +18,8 @@ getStartedBtn.addEventListener("click", function () {
 });
 
 //Function declarations
+//Wait for the DOM to finish loading before running the game and its welcome message
+//Get character buttons and assigns event listeners to them
 function gamePlayClick() {
     document.addEventListener('DOMContentLoaded', function () {
         let buttons = document.getElementsByTagName('button');
@@ -66,7 +68,7 @@ function runGame(selection) {
     }
 }
 
-//Outcome functions to
+//Outcome function to display outcome if user selects rock
 function displayRockOutcome() {
     if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
         displayResult().innerHTML = "<p data-type='tie' id = 'result-needed'>It's a tie!</p>";
@@ -81,6 +83,7 @@ function displayRockOutcome() {
     }
 }
 
+//Outcome function to display outcome if user selects paper
 function displayPaperOutcome() {
     if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
         displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Paper beats Rock!</p>";
@@ -95,6 +98,7 @@ function displayPaperOutcome() {
     }
 }
 
+//Outcome function to display outcome if user selects scissors
 function displayScissorsOutcome() {
     if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
         displayResult().innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Rock beats Scissors!</p>";
@@ -109,6 +113,7 @@ function displayScissorsOutcome() {
     }
 }
 
+//Outcome function to display outcome if user selects john wick
 function displayJohnWickOutcome() {
     if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
         displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Rock breaks John Wicks pencil!</p>";
@@ -123,6 +128,7 @@ function displayJohnWickOutcome() {
     }
 }
 
+//Outcome function to display outcome if user selects chuck norris
 function displayChuckNorrisOutcome() {
     if (document.getElementById('opponents-selection').innerHTML === '<p>Opponent Played: Rock</p>') {
         displayResult().innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because Chuck Norris.</p>";
@@ -137,22 +143,26 @@ function displayChuckNorrisOutcome() {
     }
 }
 
+//Outcome function to display opponents chosen character
 function displayOpponentsChoice() {
-    
     let opponentPlayed = computerSelection();
     opponentSelectionOutput.innerHTML = `<p>Opponent Played: ${opponentPlayed}</p>`;
     return opponentSelectionOutput;
 }
 
+//Function to display result message with outcome of round
 function displayResult() {
     let gameResultDisplay = document.getElementById('overall-outcome');
     return gameResultDisplay;
 }
 
+
+//Function for counter to display turns remaining in the game
 function displayTurnsRemaining() {
     document.getElementById("remaining-turns").innerText = --turnsRemaining;
 }
 
+//Function for counter to display your score in the game
 function displayYourScore() {
     let resultNeeded = document.getElementById('result-needed').innerText;
     if (resultNeeded === 'You Win!') {
@@ -160,7 +170,7 @@ function displayYourScore() {
     }
 }
 
-
+//Function for counter to display opponents score in the game
 function displayOpponentScore() {
     let resultNeeded = document.getElementById('result-needed').innerText;
     if (resultNeeded === 'You Lose!') {
@@ -168,6 +178,7 @@ function displayOpponentScore() {
     }
 }
 
+//Function to make hidden icons visible to user at game mid-point
 function displayHiddenChoices() {
     let hiddenIcons = document.getElementById('hidden-buttons');
     if (document.getElementById("remaining-turns").innerText <= 5) {
@@ -176,6 +187,7 @@ function displayHiddenChoices() {
     }
 }
 
+//Function to display end of game message displaying overall outcome of game
 function endOfGame() {
     let endOfGameMessage = document.getElementById('end-of-game-message');
     let yourFinalScore = parseInt(document.getElementById("your-current-score").innerText);
@@ -195,6 +207,7 @@ function endOfGame() {
     }
 }
 
+//Function for reseting game after 'Play Again!' button is clicked
 function playAgain() {
     let playAgainBtn = document.getElementById('play-again');
     playAgainBtn.addEventListener('click', function () {
