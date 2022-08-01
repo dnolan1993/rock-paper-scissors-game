@@ -28,64 +28,62 @@
     </section>
     <section class="full-game">
         <h1 class="heading logo">Rock, Paper, Scissors</h1>
-            <div class="game-rules">
-                <h2 class="heading">Game Rules:</h2>
-                <ul id="rules-list">
-                    <li>
-                        Rock beats scissors.
-                    </li>
-                    <li>
-                        Scissors beats Paper.
-                    </li>
-                    <li>
-                        Paper beats Rock.
-                    </li>
-                </ul>
-                <p>The rest is a mystery!</p>
-            </div>
-            <div class="button-icons">
-                <button id="rock" data-role="character" data-type="rock" class="icon rock">
-                    <i class="fa-solid fa-hand-back-fist"></i>
-                </button>
-                <button id="paper" data-role="character" data-type="paper" class="icon paper">
-                    <i class="fa-solid fa-hand"></i>
-                </button>
-                <button id="scissors" data-role="character" data-type="scissors" class="icon scissors"><i
-                        class="fa-solid fa-hand-scissors"></i>
-                </button>
-            </div>
-            <div id="hidden-buttons">
-                <button id="john-wick" data-role="character" data-type="john-wick" class="icon john-wick"><i class="fa-solid fa-user-tie"></i>
-                </button>
-                <button id="chuck-norris" data-role="character" data-type="chuck-norris" class="icon chuck-norris"><i
-                        class="fa-solid fa-person-falling-burst"></i>
-                </button>
-            </div>
-            <div class="game-result">
-                <div id="opponents-selection"></div>
-                <div id="overall-outcome">
-                    <div id="outcome">
-                        <p id="result-needed"></p>
-                    </div>
-                    <div id="explanation"></div>
-                    <p></p>
+        <div class="game-rules">
+            <h2 class="heading">Game Rules:</h2>
+            <ul id="rules-list">
+                <li>
+                    Rock beats scissors.
+                </li>
+                <li>
+                    Scissors beats Paper.
+                </li>
+                <li>
+                    Paper beats Rock.
+                </li>
+            </ul>
+            <p>The rest is a mystery!</p>
+        </div>
+        <div class="button-icons">
+            <button id="rock" data-role="character" data-type="rock" class="icon rock">
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </button>
+            <button id="paper" data-role="character" data-type="paper" class="icon paper">
+                <i class="fa-solid fa-hand"></i>
+            </button>
+            <button id="scissors" data-role="character" data-type="scissors" class="icon scissors"><i
+                    class="fa-solid fa-hand-scissors"></i>
+            </button>
+        </div>
+        <div id="hidden-buttons">
+            <button id="john-wick" data-role="character" data-type="john-wick" class="icon john-wick"><i
+                    class="fa-solid fa-user-tie"></i>
+            </button>
+            <button id="chuck-norris" data-role="character" data-type="chuck-norris" class="icon chuck-norris"><i
+                    class="fa-solid fa-person-falling-burst"></i>
+            </button>
+        </div>
+        <div class="game-result">
+            <div id="opponents-selection"></div>
+            <div id="overall-outcome">
+                <div id="outcome">
+                    <p id="result-needed"></p>
                 </div>
+                <div id="explanation"></div>
+                <p></p>
             </div>
+        </div>
     </section>
-    <section class="game-scores">
+    <div class="game-scores">
         <span id="your-score">
-            <p>Your Score:<p id="your-current-score">0</p>
-            </p>
+            Your Score:<span id="your-current-score"> 0</span>
         </span>
         <span id="turns">
-            <p>Turns remaining:<p id="remaining-turns">10</p>
-            </p>
+            Turns remaining:<span id="remaining-turns"> 10</span>
         </span>
         <span id="opponents-score">
-            <p>Opponents Score:<p id="opponents-current-score">0</p>
-            </p>
+            Opponents Score:<span id="opponents-current-score">0</span>
         </span>
-    </section>
+    </div>
 
     <!-- font awesome and javsscript links -->
     <script src="https://kit.fontawesome.com/a31ad1dfc9.js" crossorigin="anonymous"></script>

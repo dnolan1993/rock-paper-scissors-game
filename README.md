@@ -251,3 +251,6 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
   A score board page to log users high scores.
  </li>
 </ul>
+
+## Testing 
+### Validator Testing
