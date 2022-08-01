@@ -233,3 +233,21 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
  </li>
 </ul>
 <img src="documentation/end-of-game-message.png" alt="Screenshot of the end of game message">
+
+<br>
+
+### Possible Features to be Implemented in the future:
+<ul>
+ <li>
+  A feature to allow player to connect and play against each other instead a randomly generated opponent.
+ </li>
+ <li>
+  A counter on the end of game meassage to show the total of games played and the users wins and loses of the total games.
+ </li>
+ <li>
+  A log in page to allow users to log in and keep track of their score and add to it.
+ </li>
+ <li>
+  A score board page to log users high scores.
+ </li>
+</ul>
