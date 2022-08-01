@@ -515,3 +515,25 @@ The site has been tested on the following browsers:
    </ul>
   </li>
 </ol>
+
+## Bugs
+### Solved bugs
+<ol>
+ <li>
+  My mentor pointed out that when an icon was hovered over all icons were becoming enlarged instead of the individual icon being hovered over.
+   <ul>
+    <li>
+     We determined this was due to me placing the 'hover' pseudo-class on the wrong element.
+    </li>
+   </ul>
+ </li>
+ <li>
+  My mentor pointed out that when an icon was hovered over and it enlarge it was shifting all page content below to icons when resized.
+   <ul>
+    <li>
+     We determined that givng the icons container a specific size to allow it to resize inside the container without disrupting the page was the best solution.
+    </li>
+   </ul>
+ </li>
+</ol>
+These solutions fixed the bugs in the page.
