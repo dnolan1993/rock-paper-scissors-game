@@ -582,4 +582,7 @@ To deploy the site to GitHub pages I took the following steps:
  <li>
   Font used is sourced from <a href="https://fonts.google.com/" target="_blank">Google fonts</a>.
  </li>
+ <li>
+  Some of the code within the script.js file is based off of code from my guided project <a href="https://github.com/dnolan1993/love-maths/blob/main/assets/js/script.js">Love Maths</a>.
+ </li>
 </ul>
