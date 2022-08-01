@@ -262,7 +262,7 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
 ### Validator Testing
 <ul>
  <li>
- <a href="https://validator.w3.org/#validate_by_uri">HTML Validator</a>
+ <a href="https://validator.w3.org/#validate_by_uri" target="_blank">HTML Validator</a>
  </li>
   <ul>
    <li>
