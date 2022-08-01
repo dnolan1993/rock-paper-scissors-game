@@ -541,3 +541,6 @@ These solutions fixed the bugs in the page.
 
 ### Unsolved bugs
 To my knowledge, there are no unsolved bugs on the site.
+
+## Lighthouse Summary results
+(Add Lighthouse summary screenshot here.)
