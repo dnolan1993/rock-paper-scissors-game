@@ -270,4 +270,13 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
     <img src="documentation/html-validation.png" alt="screenshot of HTML validation result for index.html">
    </li>
   </ul>
+ <li>
+ <a href="https://jigsaw.w3.org/css-validator/#validate_by_uri" target="_blank">CSS Validator</a>
+ </li>
+  <ul>
+   <li>
+    style.css result
+    <img src="documentation/css-validation.png" alt="screenshot of CSS validation result for style.css">
+   </li>
+  </ul>
 </ul>
