@@ -280,3 +280,31 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
    </li>
   </ul>
 </ul>
+<li>
+ <a href="https://jshint.com/" target="_blank">JavaScript Validator</a>
+ </li>
+  <ul>
+   <li>
+    script.js result
+    <img src="" alt="">
+   </li>
+  </ul>
+ <li>
+
+### Browser Testing
+The site has been tested on the following browsers:
+
+<ol>
+ <li>
+  Google Chrome, Version 102.0.5005.115 (Official Build) (64-bit)
+ </li>
+ <li>
+  Firefox, Version 102.0.5005.115 (Official Build) (64-bit)
+ </li>
+ <li>
+  Microsoft Edge, Version 102.0.1245.41 (Official build) (64-bit)
+ </li>
+ <li>
+  Safari on iOS, version 15.4 (iPhone, iPad and iPod)(Tested on iPhone XR)
+ </li>
+</ol>
