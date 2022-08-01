@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors Game
 
-<a  href="https://dnolan1993.github.io/rock-paper-scissors-game/">Link to live project</a>
+<a  href="https://dnolan1993.github.io/rock-paper-scissors-game/" target="_blank">Link to live project</a>
 
 The Rock, Paper, Scissors Game is a webpage that contains a rock, paper, scissors game with a twist, The user can choose from rock, paper or scissors at the begining of the game, as they progress through the game, two new options will be added half way through to game to make the computers choice more unpredictable.
 
@@ -55,21 +55,21 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
 ### Colour Scheme
 <ul>
     <li>
-        For the colours of the webpage I went with light background overall with the counter colours different colours for each individual counter, then the background for the main-game section is a darker shade of a similar colour to the main page background, the sections within the main-game section have the same colour as the main page background. Both the icons and text within the darker background have the same light colour for contrast and all text within the lighter background have a darker colour for contrast. all chosen colours were tested for contrast using <a href="https://webaim.org/resources/contrastchecker/">webaim.org contrast checker</a>.
+        For the colours of the webpage I went with light background overall with the counter colours different colours for each individual counter, then the background for the main-game section is a darker shade of a similar colour to the main page background, the sections within the main-game section have the same colour as the main page background. Both the icons and text within the darker background have the same light colour for contrast and all text within the lighter background have a darker colour for contrast. all chosen colours were tested for contrast using <a href="https://webaim.org/resources/contrastchecker/" target="_blank">webaim.org contrast checker</a>.
     </li>
 </ul>
 
 ### Fonts
 <ul>
     <li>
-        For the fonts, I used <a href="https://fonts.google.com/">Google fonts</a>. For the entire page, I used 'Kanit' as I felt it worked well with the colour scheme, was appealing and very readable for the user.
+        For the fonts, I used <a href="https://fonts.google.com/" target="_blank">Google fonts</a>. For the entire page, I used 'Kanit' as I felt it worked well with the colour scheme, was appealing and very readable for the user.
     </li>
 </ul>
 
 ### Icons
 <ul>
     <li>
-        For the icons I used <a href="https://fontawesome.com/">Font Awesome</a>. I chose the icons of hands in the positions of the symbol for rock, paper and scissors in the game as these symbols are universaly known as the symbol for these characters in the game. The two symbols for the extra characters were a man in a suit for John Wick as he wears a suit and tie in the movies, It is his signature look, And a stickman kicking for Chuck Norris as he is known best as a martial artist.
+        For the icons I used <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>. I chose the icons of hands in the positions of the symbol for rock, paper and scissors in the game as these symbols are universaly known as the symbol for these characters in the game. The two symbols for the extra characters were a man in a suit for John Wick as he wears a suit and tie in the movies, It is his signature look, And a stickman kicking for Chuck Norris as he is known best as a martial artist.
     </li>
 </ul>
 
@@ -77,14 +77,14 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
 ### Google Fonts
 <ul>
     <li>
-        I imported fonts from <a href="https://fonts.google.com/">Google fonts</a> to style the website.
+        I imported fonts from <a href="https://fonts.google.com/" target="_blank">Google fonts</a> to style the website.
     </li>
 </ul>
 
 ### Font Awesome
 <ul>
     <li>
-        I imported icons from <a href="https://fontawesome.com/">Font Awesome</a> to style the website.
+        I imported icons from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> to style the website.
     </li>
 </ul>
 
@@ -159,4 +159,17 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
 </ul>
 <img src="documentation/game-icons.png" alt="Screenshot of the game icon buttons">
 
-
+<ul>
+ <li>
+  Hidden Icons
+   <ul>
+    <li>
+     The Hidden Icons are the buttons where the user can select which character they want to play against the opponent but unlike the game icons they only appear half way through the game (when user has 5 turns remaining).
+    </li>
+    <li>
+     When hovered over the icons enlarge to show the user clearly which character they are chosing.
+    </li>
+   </ul>
+ </li>
+</ul>
+<img src="documentation/hidden-icons.png" alt="Screenshot of the hidden icon buttons">
