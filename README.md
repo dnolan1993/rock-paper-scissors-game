@@ -215,3 +215,21 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
  </li>
 </ul>
 <img src="documentation/score-counters.png" alt="Screenshot of the score counters form the webpage">
+
+<ul>
+ <li>
+  End Of Game message 
+   <ul>
+    <li>
+     The End Of Game message displays a brief message to the user of the outcome of the game.
+    </li>
+    <li>
+     It states the game is over and that the user has completed 10 rounds of the game.
+    </li>
+    <li>
+     It then states what the users final score and the opponents final score is and the outcome depending on those scores, the outcome win either be 'You have lost!' or 'Congratulations! You've Won!'.
+    </li>
+   </ul>
+ </li>
+</ul>
+<img src="documentation/end-of-game-message.png" alt="Screenshot of the end of game message">
