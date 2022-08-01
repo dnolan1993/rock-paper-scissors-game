@@ -544,3 +544,31 @@ To my knowledge, there are no unsolved bugs on the site.
 
 ## Lighthouse Summary results
 (Add Lighthouse summary screenshot here.)
+
+## Deployment
+This site is hosted by GitHub Pages and deployed directly to the main branch. The deployed site will update if after new commits are made, they are pushed to GitHub pages using the "git push" command in the terminal. The Homepage is named index.html to ensure it deploys correctly through GitHub pages.
+
+To deploy the site to GitHub pages I took the following steps:
+<ol>
+ <li>
+  I logged in to Github.
+ </li>
+ <li>
+  I selected "dnolan1993/rock-paper-scissors-game" from my repositories.
+ </li>
+ <li>
+  I selected "Settings", to the right hand side of the nav bar.I selected "Settings", to the right hand side of the nav bar.
+ </li>
+ <li>
+  I selected "Pages", lower left on the screen.
+ </li>
+ <li>
+  I selected "Main" in the branch dropdown menu, within the "Source" section.
+ </li>
+ <li>
+  I refreshed my page using "ctrl+shift+r" to perform a hard reload of the GitHub web page.
+ </li>
+ <li>
+  GitHib pages then display a page with a banner stating "Your site is live at https://dnolan1993.github.io/rock-paper-scissors-game/"
+ </li>
+</ol>
