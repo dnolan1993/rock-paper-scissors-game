@@ -173,3 +173,21 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
  </li>
 </ul>
 <img src="documentation/hidden-icons.png" alt="Screenshot of the hidden icon buttons">
+
+<ul>
+ <li>
+  Game Result Display
+   <ul>
+    <li>
+     The Game Result section diplays 'Opponent Played:' followed by the random choice of the opponent, so the user can see what choice the opponent has made.
+    </li>
+    <li>
+     Below the 'Opponent Played:' section of the result, an outcome of 'You Win!' or 'You Lose!' is displayed depending on the choices of the players.
+    </li>
+    <li>
+     Below the outcome a paragraph is displayed explaining the outcome e.g. 'Scissors beats Paper!'
+    </li>
+   </ul>
+ </li>
+</ul>
+<img src="documentation/game-result.png" alt="Screenshot of the game result section">
