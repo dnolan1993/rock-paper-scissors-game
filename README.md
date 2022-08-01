@@ -99,6 +99,7 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
     <li>
         JavaScript
     </li>
+</ul>
 
 ## Features
 ### Existing Features
@@ -289,7 +290,6 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
     <img src="" alt="">
    </li>
   </ul>
- <li>
 
 ### Browser Testing
 The site has been tested on the following browsers:
@@ -329,6 +329,7 @@ The site has been tested on the following browsers:
  <li>
   I confirmed my end of game message displayed when user play 10 rounds of the game and was removed and counters were reset when 'Play Again!' button is clicked.
  </li>
+</ul>
 
 ## UX Client Goals
 ### First time visitors:
@@ -537,3 +538,6 @@ The site has been tested on the following browsers:
  </li>
 </ol>
 These solutions fixed the bugs in the page.
+
+### Unsolved bugs
+To my knowledge, there are no unsolved bugs on the site.
