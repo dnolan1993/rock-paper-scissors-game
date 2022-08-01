@@ -2,7 +2,7 @@
 
 <a  href="https://dnolan1993.github.io/rock-paper-scissors-game/" target="_blank">Link to live project</a>
 
-The Rock, Paper, Scissors Game is a webpage that contains a rock, paper, scissors game with a twist, The user can choose from rock, paper or scissors at the begining of the game, as they progress through the game, two new options will be added half way through to game to make the computers choice more unpredictable.
+The Rock, Paper, Scissors Game is a webpage that contains a rock, paper, scissors game with a twist, The user can choose from rock, paper or scissors at the beginning of the game, and as they progress through the game, two new options will be added halfway through to game to make the computer's choice more unpredictable.
 
 <img src="assets/images/webpage-device-preview.png" alt="Screenshot of webpage on various different screen sizes">
 
@@ -19,17 +19,17 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
     <li>Enjoys making a decision where they can't possibly know the outcome.</li>
 </ul> 
 
-#### Goal as a first time visitor to the site:
+#### Goal as a first-time visitor to the site:
 <ul>
     <li>Understand the game.</li>
     <li>Be able to easily operate the game and its functions.</li>
-    <li>Be able to see where all options are and see thier own score aswell as the opponents.</li>
+    <li>Be able to see where all options are and see their own score as well as the opponents.</li>
 </ul>
 
 #### Goal as a returning visitor:
 <ul>
-    <li>Quickly be able to get straight in to the game.</li>
-    <li>Be able to clearly see thier own score aswell as the opponents.</li>
+    <li>Quickly be able to get straight into the game.</li>
+    <li>Be able to clearly see their own score as well as the opponents.</li>
 </ul>
 
 <br>
@@ -55,21 +55,21 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
 ### Colour Scheme
 <ul>
     <li>
-        For the colours of the webpage I went with light background overall with the counter colours different colours for each individual counter, then the background for the main-game section is a darker shade of a similar colour to the main page background, the sections within the main-game section have the same colour as the main page background. Both the icons and text within the darker background have the same light colour for contrast and all text within the lighter background have a darker colour for contrast. all chosen colours were tested for contrast using <a href="https://webaim.org/resources/contrastchecker/" target="_blank">webaim.org contrast checker</a>.
+        For the colours of the webpage, I went with light background overall with the counter colours different colours for each counter, then the background for the main-game section is a darker shade of a similar colour to the main page background, the sections within the main-game section have the same colour as the main page background. Both the icons and text within the darker background have the same light colour for contrast and all text within the lighter background has a darker colour for contrast. all chosen colours were tested for contrast using <a href="https://webaim.org/resources/contrastchecker/" target="_blank">webaim.org contrast checker</a>.
     </li>
 </ul>
 
 ### Fonts
 <ul>
     <li>
-        For the fonts, I used <a href="https://fonts.google.com/" target="_blank">Google fonts</a>. For the entire page, I used 'Kanit' as I felt it worked well with the colour scheme, was appealing and very readable for the user.
+        For the fonts, I used <a href="https://fonts.google.com/" target="_blank">Google fonts</a>. For the entire page, I used 'Kanit' as I felt it worked well with the colour scheme, was appealing and was very readable for the user.
     </li>
 </ul>
 
 ### Icons
 <ul>
     <li>
-        For the icons I used <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>. I chose the icons of hands in the positions of the symbol for rock, paper and scissors in the game as these symbols are universaly known as the symbol for these characters in the game. The two symbols for the extra characters were a man in a suit for John Wick as he wears a suit and tie in the movies, It is his signature look, And a stickman kicking for Chuck Norris as he is known best as a martial artist.
+        For the icons I used <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>. I chose the icons of hands in the positions of the symbol for rock, paper and scissors in the game as these symbols are universally known as the symbol for these characters in the game. The two symbols for the extra characters were a man in a suit for John Wick as he wears a suit and tie in the movies, It is his signature look, And a stickman kicking for Chuck Norris as he is known best as a martial artist.
     </li>
 </ul>
 
@@ -108,7 +108,7 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
   Welcome message 
    <ul>
     <li>
-     The welcome message displays a brief message to the user what the game is and that the game has a twist.
+     The welcome message displays a brief message to the user about what the game is and that the game has a twist.
     </li>
     <li>
      When the 'Get started!' button is hovered over it enlarges showing the user they can select the button to start the game.
@@ -153,7 +153,7 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
      The Game Icons are the buttons where the user can select which character they want to play against the opponent.
     </li>
     <li>
-     When hovered over the icons enlarge to show the user clearly which character they are chosing.
+     When hovered over the icons enlarge to show the user clearly which character they are choosing.
     </li>
    </ul>
  </li>
@@ -165,10 +165,10 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
   Hidden Icons
    <ul>
     <li>
-     The Hidden Icons are the buttons where the user can select which character they want to play against the opponent but unlike the game icons they only appear half way through the game (when user has 5 turns remaining).
+     The Hidden Icons are the buttons where the user can select which character they want to play against the opponent but unlike the game icons, they only appear halfway through the game (when the user has 5 turns remaining).
     </li>
     <li>
-     When hovered over the icons enlarge to show the user clearly which character they are chosing.
+     When hovered over the icons enlarge to show the user clearly which character they are choosing.
     </li>
    </ul>
  </li>
@@ -180,7 +180,7 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
   Game Result Display
    <ul>
     <li>
-     The Game Result section diplays 'Opponent Played:' followed by the random choice of the opponent, so the user can see what choice the opponent has made.
+     The Game Result section displays' Opponent Played:' followed by the random choice of the opponent, so the user can see what choice the opponent has made.
     </li>
     <li>
      Below the 'Opponent Played:' section of the result, an outcome of 'You Win!' or 'You Lose!' is displayed depending on the choices of the players.
@@ -204,13 +204,13 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
      All counters are displayed below the main game section.
     </li>
     <li>
-     The 'Turns remaining:' counter is located in the center of the counters section and is coloured the same as the game rules section, this counter starts at '10' and decreases by one everytime the player selects a character to play.
+     The 'Turns remaining:' counter is located in the centre of the counters section and is coloured the same as the game rules section, this counter starts at '10' and decreases by one every time the player selects a character to play.
     </li>
     <li>
-     The 'Your Score:' counter is located to the left of the counter section and is coloured a dark blue colour, this colour was chosen to make the counter stand out and has been tested for contrast using the method stated above, this counter starts at '0' and increases by one everytime the player gets a 'You Win!' outcome in the game results section.
+     The 'Your Score:' counter is located to the left of the counter section and is coloured a dark blue colour, this colour was chosen to make the counter stand out and has been tested for contrast using the method stated above, this counter starts at '0' and increases by one every time the player gets a 'You Win!' outcome in the game results section.
     </li>
      <li>
-     The 'Opponents Score:' counter is located to the right of the counter section and is coloured a dark red colour, this colour was chosen to make the counter stand out and has been tested for contrast using the method stated above, this counter starts at '0' and increases by one everytime the player gets a 'You Lose!' outcome in the game results section.
+     The 'Opponents Score:' counter is located to the right of the counter section and is coloured a dark red colour, this colour was chosen to make the counter stand out and has been tested for contrast using the method stated above, this counter starts at '0' and increases by one every time the player gets a 'You Lose!' outcome in the game results section.
     </li>
    </ul>
  </li>
@@ -243,19 +243,19 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
 
 <br>
 
-### Possible Features to be Implemented in the future:
+### Possible Features to be implemented in the future:
 <ul>
  <li>
-  A feature to allow player to connect and play against each other instead a randomly generated opponent.
+  A feature to allow players to connect and play against each other instead of a randomly generated opponent.
  </li>
  <li>
-  A counter on the end of game meassage to show the total of games played and the users wins and loses of the total games.
+  A counter on the end of game message to show the total of games played and the user's wins and losses of the total games.
  </li>
  <li>
-  A log in page to allow users to log in and keep track of their score and add to it.
+  A log-in page to allow users to log in and keep track of their score and add to it.
  </li>
  <li>
-  A score board page to log users high scores.
+  A scoreboard page to log users' high scores.
  </li>
 </ul>
 
@@ -302,7 +302,7 @@ The site has been tested on the following browsers:
   Firefox, Version 102.0.5005.115 (Official Build) (64-bit)
  </li>
  <li>
-  Microsoft Edge, Version 102.0.1245.41 (Official build) (64-bit)
+  Microsoft Edge, Version 102.0.1245.41 (Official Build) (64-bit)
  </li>
  <li>
   Safari on iOS, version 15.4 (iPhone, iPad and iPod)(Tested on iPhone XR)
@@ -312,10 +312,10 @@ The site has been tested on the following browsers:
 ### Additional Testing
 <ul>
  <li>
-  I got friends and family to visit the site on their own devices and give me feedback on the functionality of the page and the result was they could use the game easily on their devices and all section appeared to work correctly.
+  I got friends and family to visit the site on their own devices and give me feedback on the functionality of the page and the result was they could use the game easily on their devices and all sections appeared to work correctly.
  </li>
  <li>
-  I confirmed my welcome message displayed when page loaded and was removed when 'Get Started!' button is clicked.
+  I confirmed my welcome message displayed when the page loaded and was removed when the 'Get Started!' button is clicked.
  </li>
  <li>
   I manually tested all buttons to ensure that they show the correct output when selected by the user.
@@ -324,21 +324,21 @@ The site has been tested on the following browsers:
   I Used Devtools in Google Chrome, Version 102.0.5005.115 (Official Build) (64-bit), to ensure that the elements of my page were responsive through all screen sizes and to test that the buttons still functioned as they should.
  </li>
  <li>
-  I confirmed that all content of the page was easy to read and gave clear explanation of how the game worked.
+  I confirmed that all content on the page was easy to read and gave a clear explanation of how the game worked.
  </li>
  <li>
-  I confirmed my end of game message displayed when user play 10 rounds of the game and was removed and counters were reset when 'Play Again!' button is clicked.
+  I confirmed my end of game message displayed when the user play 10 rounds of the game and was removed and counters were reset when the 'Play Again!' button is clicked.
  </li>
 </ul>
 
 ## UX Client Goals
-### First time visitors:
+### First-time visitors:
 <ol>
  <li>
   Understand the game.
    <ul>
     <li>
-     On the Page loading the site displays a message outlining that it is a simple rock, paper, scissors game but with a twist.
+     On the Page loading, the site displays a message outlining that it is a simple rock, paper, scissors game but with a twist.
     </li>
     <li>
      When 'Get Started!' is clicked the message is removed and there are game rules outlining how the game works and what character beats another.
@@ -360,13 +360,13 @@ The site has been tested on the following browsers:
   </ul>
  </li>
  <li>
-  Be able to see where all options are and see thier own score aswell as the opponents.
+  Be able to see where all options are and see their score as well as the opponents.
   <ul>
    <li>
     The options are very clear and are presented using large icons that enlarge when hovered over, making them easily visible and usable for the user.
    </li>
    <li>
-    The score and turns remaining counters are clearly displayed at the bottom of the page below the main game section.
+    The score and turns remaining counters are displayed at the bottom of the page below the main game section.
    </li>
   </ul>
  </li>
@@ -375,27 +375,27 @@ The site has been tested on the following browsers:
 ### Returning visitors:
 <ol>
  <li>
-  Quickly be able to get straight in to the game.
+  Quickly be able to get straight into the game.
    <ul> 
     <li>
-     When 'Get Started!' is clicked the message is removed and the user can get straight in to the game.
+     When 'Get Started!' is clicked the message is removed and the user can get straight into the game.
     </li>
     <li>
-     When the end of game message is diplayed the user only has to click the 'Play Again!' and the user is ready to play again. 
+     When the end of game message is displayed the user only has to click the 'Play Again!' and the user is ready to play again. 
     </li>
    </ul>
  </li>
  <li>
-  Be able to clearly see thier own score aswell as the opponents.
+  Be able to see their score as well as the opponents.
   <ul>
    <li>
-    All score counters are displayed at the bottom of the page, making it easy for the user to see their score, their opponents score and turns remaining.
+    All score counters are displayed at the bottom of the page, making it easy for the user to see their score, their opponent's score and the turns remaining.
    </li>
   </ul>
  </li>
 </ol>
 
-## Funtionality Testing
+## Functionality Testing
 <ol>
  <li>
    Welcome message
@@ -404,10 +404,10 @@ The site has been tested on the following browsers:
       <a href="https://dnolan1993.github.io/rock-paper-scissors-game/">Load Game page</a> in web browser.
      </li>
      <li>
-      Ensure that the welcome message is display on load of webpage.
+      Ensure that the welcome message is displayed on load of the webpage.
      </li>
      <li>
-      Use devtools to adjust screen sizes up and down to verify that the welcome message and its positioning are responsive.
+      Use DevTools to adjust screen sizes up and down to verify that the welcome message and its positioning are responsive.
      </li>
     </ul>
   </li>
@@ -415,10 +415,10 @@ The site has been tested on the following browsers:
    Welcome message 'Get Started!' button
     <ul>
      <li>
-     Click the 'Get Started!' button in the welcome message to verify it removes the welcome message to allow the user to clearly view the game page.
+     Click the 'Get Started!' button in the welcome message to verify it removes the welcome message to allow the user to view the game page.
      </li>
      <li>
-      Use devtools to adjust screen sizes up and down to verify that the 'Get Started!' button and its positioning are responsive.
+      Use DevTools to adjust screen sizes up and down to verify that the 'Get Started!' button and its positioning are responsive.
      </li>
     </ul>
   </li>
@@ -426,7 +426,7 @@ The site has been tested on the following browsers:
    Entire page responsiveness
    <ul>
     <li>
-     Use devtools to adjust screen sizes up and down to verify that the page and elements positioning are responsive.
+     Use DevTools to adjust screen sizes up and down to verify that the page and elements positioning are responsive.
     </li>
    </ul>
   </li>
@@ -437,10 +437,10 @@ The site has been tested on the following browsers:
       Hover over each icon to verify that they enlarge individually as hovered over.
      </li>
      <li>
-      Click each icon to ensure that it select the correct outcome for the selection of the icon.
+      Click each icon to ensure that it selects the correct outcome for the selection of the icon.
      </li>
      <li>
-      Use devtools to adjust screen sizes up and down to verify that the game icons and their positioning are responsive.
+      Use DevTools to adjust screen sizes up and down to verify that the game icons and their positioning are responsive.
      </li>
    </ul>
   </li>
@@ -448,19 +448,19 @@ The site has been tested on the following browsers:
    Hidden Icons
     <ul>
      <li>
-      Play the game until 'Turns remaining' counter reaches 5 to ensure the icon display when intended.
+      Play the game until the 'Turns remaining' counter reaches 5 to ensure the icons display when intended.
      </li>
      <li>
       Hover over each icon to verify that they enlarge individually as hovered over.
      </li>
      <li>
-      Click each icon to ensure that it select the correct outcome for the selection of the icon.
+      Click each icon to ensure that it selects the correct outcome for the selection of the icon.
      </li>
      <li>
       Complete the game and click the 'Play Again!' button to verify that the buttons are removed as intended.
      </li>
      <li>
-      Use devtools to adjust screen sizes up and down to verify that the hidden icons and their positioning are responsive.
+      Use DevTools to adjust screen sizes up and down to verify that the hidden icons and their positioning are responsive.
      </li>
    </ul>
   </li>
@@ -468,16 +468,16 @@ The site has been tested on the following browsers:
    Result display
     <ul>
      <li>
-      Play the game a number of times to ensure that the opponents choice is random and chooses a different character.
+      Play the game several times to ensure that the opponent's choice is random and chooses a different character.
      </li>
      <li>
-      Play the game a number of times to ensure that the result is the correct value 'You Win!' or 'You Lose!' depending on the characters chosen.
+      Play the game several times to ensure that the result is the correct value 'You Win!' or 'You Lose!' depending on the characters chosen.
      </li>
      <li>
-      Play the game a number of times to ensure that text displayed is correct depending on the characters chosen, showing the correct information e.g. 'Rock beats Scissors'.
+      Play the game several times to ensure that the text displayed is correct depending on the characters chosen, showing the correct information e.g. 'Rock beats Scissors'.
      </li>
      <li>
-      Use devtools to adjust screen sizes up and down to verify that the result display and its positioning are responsive.
+      Use DevTools to adjust screen sizes up and down to verify that the result display and its positioning are responsive.
      </li>
    </ul>
   </li>
@@ -488,13 +488,13 @@ The site has been tested on the following browsers:
       Ensure that counters have the correct value on page load, 'Your Score:0', 'Turns remaining:10' and 'Opponents Score:0'.
      </li>
      <li>
-      Play the game a number of times to ensure the 'Your Score:' counter increases by 1 each time a 'You Win!' outcome is displayed.
+      Play the game several times to ensure the 'Your Score:' counter increases by 1 each time a 'You Win!' outcome is displayed.
      </li>
      <li>
-      Play the game a number of times to ensure the 'Turns remaining:' counter reduces by 1 each time a character is played.
+      Play the game several times to ensure the 'Turns remaining:' counter reduces by 1 each time a character is played.
      </li>
      <li>
-      Play the game a number of times to ensure the 'Opponents Score:' counter increases by 1 each time a 'You Lose!' outcome is displayed.
+      Play the game several times to ensure the 'Opponents Score:' counter increases by 1 each time a 'You Lose!' outcome is displayed.
      </li>
     </ul>
   </li>
@@ -505,13 +505,13 @@ The site has been tested on the following browsers:
      Play the game until the 'Turns remaining:' counter has a value of 0 to ensure that the end of game message is displayed when intended. 
     </li>
     <li>
-     Ensure that the end of game is showing the current infornmation, your score, opponents score and the overall outcome. Perform this step multiple times to ensure consistency.
+     Ensure that the end of game message is showing the current information, your score, opponents score and the overall outcome. Perform this step multiple times to ensure consistency.
     </li>
     <li>
-     Click 'Play Again!' button to ensure it removes the end of game message, resets counters and removes hidden icons as intended.
+     Click the 'Play Again!' button to ensure it removes the end of game message, resets counters and removes hidden icons as intended.
     </li>
     <li>
-     Play the game until 'Turns remaining' counter reaches 5 again to ensure the hidden icon display again when intended.
+     Play the game until the 'Turns remaining' counter reaches 5 again to ensure the hidden icons display again when intended.
     </li>
    </ul>
   </li>
@@ -521,7 +521,7 @@ The site has been tested on the following browsers:
 ### Solved bugs
 <ol>
  <li>
-  My mentor pointed out that when an icon was hovered over all icons were becoming enlarged instead of the individual icon being hovered over.
+  My mentor pointed out that when an icon is hovered over all icons were becoming enlarged instead of the individual icon being hovered over.
    <ul>
     <li>
      We determined this was due to me placing the 'hover' pseudo-class on the wrong element.
@@ -529,15 +529,15 @@ The site has been tested on the following browsers:
    </ul>
  </li>
  <li>
-  My mentor pointed out that when an icon was hovered over and it enlarge it was shifting all page content below to icons when resized.
+  My mentor pointed out that when an icon was hovered over and enlarged it shifted all page content below to icons when resized.
    <ul>
     <li>
-     We determined that givng the icons container a specific size to allow it to resize inside the container without disrupting the page was the best solution.
+     We determined that giving the icon's container a specific size to allow it to resize inside the container without disrupting the page was the best solution.
     </li>
    </ul>
  </li>
 </ol>
-These solutions fixed the bugs in the page.
+These solutions fixed the bugs on the page.
 
 ### Unsolved bugs
 To my knowledge, there are no unsolved bugs on the site.
@@ -557,7 +557,7 @@ To deploy the site to GitHub pages I took the following steps:
   I selected "dnolan1993/rock-paper-scissors-game" from my repositories.
  </li>
  <li>
-  I selected "Settings", to the right hand side of the nav bar.I selected "Settings", to the right hand side of the nav bar.
+  I selected "Settings", on the right-hand side of the nav bar. I selected "Settings", on the right-hand side of the nav bar.
  </li>
  <li>
   I selected "Pages", lower left on the screen.
@@ -569,8 +569,8 @@ To deploy the site to GitHub pages I took the following steps:
   I refreshed my page using "ctrl+shift+r" to perform a hard reload of the GitHub web page.
  </li>
  <li>
-  GitHib pages then display a page with a banner stating "Your site is live at https://dnolan1993.github.io/rock-paper-scissors-game/"
-  <img src="documentation/github-page-banner.png" alt="Screenshot of gitHub banner dislaying page URL">
+  GitHub pages then display a page with a banner stating "Your site is live at https://dnolan1993.github.io/rock-paper-scissors-game/"
+  <img src="documentation/github-page-banner.png" alt="Screenshot of GitHub banner displaying page URL">
  </li>
 </ol>
 
@@ -583,6 +583,6 @@ To deploy the site to GitHub pages I took the following steps:
   Font used is sourced from <a href="https://fonts.google.com/" target="_blank">Google fonts</a>.
  </li>
  <li>
-  Some of the code within the script.js file is based off of code from my guided project <a href="https://github.com/dnolan1993/love-maths/blob/main/assets/js/script.js">Love Maths</a>.
+  Some of the code within the script.js file is based on code from my guided project <a href="https://github.com/dnolan1993/love-maths/blob/main/assets/js/script.js">Love Maths</a>.
  </li>
 </ul>
