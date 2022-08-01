@@ -260,3 +260,14 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
 
 ## Testing 
 ### Validator Testing
+<ul>
+ <li>
+ <a href="https://validator.w3.org/#validate_by_uri">HTML Validator</a>
+ </li>
+  <ul>
+   <li>
+    index.html result
+    <img src="documentation/html-validation.png" alt="screenshot of HTML validation result for index.html">
+   </li>
+  </ul>
+</ul>
