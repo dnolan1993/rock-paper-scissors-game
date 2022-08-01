@@ -570,5 +570,16 @@ To deploy the site to GitHub pages I took the following steps:
  </li>
  <li>
   GitHib pages then display a page with a banner stating "Your site is live at https://dnolan1993.github.io/rock-paper-scissors-game/"
+  <img src="documentation/github-page-banner.png" alt="Screenshot of gitHub banner dislaying page URL">
  </li>
 </ol>
+
+## Credits
+<ul>
+ <li>
+  All icons used are sourced from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>.
+ </li>
+ <li>
+  Font used is sourced from <a href="https://fonts.google.com/" target="_blank">Google fonts</a>.
+ </li>
+</ul>
