@@ -229,6 +229,12 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
     <li>
      It then states what the users final score and the opponents final score is and the outcome depending on those scores, the outcome win either be 'You have lost!' or 'Congratulations! You've Won!'.
     </li>
+    <li>
+     When the 'Play Again!' button is hovered over it enlarges showing the user they can select the button to re-start the game.
+    </li>
+    <li>
+     Once the 'Play Again!' button is clicked the message is removed, the counters are reset to the original value and the user can begin to play again.
+    </li>
    </ul>
  </li>
 </ul>
