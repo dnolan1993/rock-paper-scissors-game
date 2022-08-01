@@ -285,7 +285,7 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
  </li>
   <ul>
    <li>
-    script.js result
+    script.js result (Add screenshot)
     <img src="" alt="">
    </li>
   </ul>
@@ -308,3 +308,24 @@ The site has been tested on the following browsers:
   Safari on iOS, version 15.4 (iPhone, iPad and iPod)(Tested on iPhone XR)
  </li>
 </ol>
+
+### Additional Testing
+<ul>
+ <li>
+  I got friends and family to visit the site on their own devices and give me feedback on the functionality of the page and the result was they could use the game easily on their devices and all section appeared to work correctly.
+ </li>
+ <li>
+  I confirmed my welcome message displayed when page loaded and was removed when 'Get Started!' button is clicked.
+ </li>
+ <li>
+  I manually tested all buttons to ensure that they show the correct output when selected by the user.
+ </li>
+ <li>
+  I Used Devtools in Google Chrome, Version 102.0.5005.115 (Official Build) (64-bit), to ensure that the elements of my page were responsive through all screen sizes and to test that the buttons still functioned as they should.
+ </li>
+ <li>
+  I confirmed that all content of the page was easy to read and gave clear explanation of how the game worked.
+ </li>
+ <li>
+  I confirmed my end of game message displayed when user play 10 rounds of the game and was removed and counters were reset when 'Play Again!' button is clicked.
+ </li>
