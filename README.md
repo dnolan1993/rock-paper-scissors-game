@@ -185,9 +185,33 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
      Below the 'Opponent Played:' section of the result, an outcome of 'You Win!' or 'You Lose!' is displayed depending on the choices of the players.
     </li>
     <li>
-     Below the outcome a paragraph is displayed explaining the outcome e.g. 'Scissors beats Paper!'
+     Below the outcome a paragraph is displayed explaining the outcome e.g. 'Scissors beats Paper!'.
     </li>
    </ul>
  </li>
 </ul>
 <img src="documentation/game-result.png" alt="Screenshot of the game result section">
+
+<ul>
+ <li>
+  Score Counter Display
+   <ul>
+    <li>
+     The Score Counter display shows 3 different counters 'Turns remaining:', 'Your Score:' and 'Opponents Score:'.
+    </li>
+    <li>
+     All counters are displayed below the main game section.
+    </li>
+    <li>
+     The 'Turns remaining:' counter is located in the center of the counters section and is coloured the same as the game rules section, this counter starts at '10' and decreases by one everytime the player selects a character to play.
+    </li>
+    <li>
+     The 'Your Score:' counter is located to the left of the counter section and is coloured a dark blue colour, this colour was chosen to make the counter stand out and has been tested for contrast using the method stated above, this counter starts at '0' and increases by one everytime the player gets a 'You Win!' outcome in the game results section.
+    </li>
+     <li>
+     The 'Opponents Score:' counter is located to the right of the counter section and is coloured a dark red colour, this colour was chosen to make the counter stand out and has been tested for contrast using the method stated above, this counter starts at '0' and increases by one everytime the player gets a 'You Lose!' outcome in the game results section.
+    </li>
+   </ul>
+ </li>
+</ul>
+<img src="documentation/score-counters.png" alt="Screenshot of the score counters form the webpage">
