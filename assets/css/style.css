@@ -208,7 +208,7 @@ body {
 }
 
 /* Media queries */
-
+/* For large screen sizes from 1200px wide and down */
 @media screen and (max-width: 1200px) {
     body {
         max-height: 780px;
@@ -227,6 +227,7 @@ body {
     }
 }
 
+/* For medium-large screen sizes from 1051px wide and down  */
 @media screen and (max-width: 1051px) {
     #welcome-message {
         width: 70%;
@@ -247,12 +248,14 @@ body {
     }
 }
 
+/* For medium-large screen sizes from 991px wide and down  */
 @media screen and (max-width: 991px) {
     #end-of-game-message {
         height: 42.5%;
     }
 }
 
+/* For medium-large screen sizes from 901px wide and down  */
 @media screen and (max-width: 901px) {
     #welcome-message {
         width: 80%;
@@ -273,6 +276,7 @@ body {
     }
 }
 
+/* For medium screen sizes from 789px wide and down  */
 @media screen and (max-width: 789px) {
     #welcome-message {
         width: 90%;
@@ -288,6 +292,7 @@ body {
     }
 }
 
+/* For small-medium screen sizes from 580px wide and down  */
 @media screen and (max-width: 580px) {
     #welcome-message {
         height: 40%;
@@ -300,6 +305,7 @@ body {
     }
 }
 
+/* For small-medium screen sizes from 540px wide and down  */
 @media screen and (max-width: 540px) {
     #get-started {
         width: 30%;
@@ -323,6 +329,7 @@ body {
     }
 }
 
+/* For small screen sizes from 450px wide and down  */
 @media screen and (max-width: 450px) {
     #get-started {
         width: 40%;
@@ -367,6 +374,7 @@ body {
     }
 }
 
+/* For small screen sizes from 390px wide and down  */
 @media screen and (max-width: 390px) {
     #welcome-message {
         height: 60%;
@@ -394,6 +402,7 @@ body {
     }
 }
 
+/* For small screen sizes from 352px wide and down  */
 @media screen and (max-width: 352px) {
     #end-of-game-message {
         margin-top: 50%;
@@ -430,6 +439,7 @@ body {
     }
 }
 
+/* For small screen sizes from 337px wide and down  */
 @media screen and (max-width: 337px) {
     #end-of-game-message {
         margin-top: 55%;
