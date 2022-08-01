@@ -329,3 +329,67 @@ The site has been tested on the following browsers:
  <li>
   I confirmed my end of game message displayed when user play 10 rounds of the game and was removed and counters were reset when 'Play Again!' button is clicked.
  </li>
+
+ ## UX Client Goals
+### First time visitors:
+<ol>
+ <li>
+  Understand the game.
+   <ul>
+    <li>
+     On the Page loading the site displays a message outlining that it is a simple rock, paper, scissors game but with a twist.
+    </li>
+    <li>
+     When 'Get Started!' is clicked the message is removed and there are game rules outlining how the game works and what character beats another.
+    </li>
+    <li>
+     The icons used are universally understood as the motions for rock, paper and scissors, making it easy for the user to understand.
+    </li>
+   </ul>
+ </li>
+ <li>
+  Be able to easily operate the game and its functions.
+  <ul>
+   <li>
+    All buttons enlarge when hovered over to make it clear to the user which button is in use and which icons can be used.
+   </li>
+   <li>
+    The user simply has to click their selected icon and that will select the icon chosen by the user.
+   </li>
+  </ul>
+ </li>
+ <li>
+  Be able to see where all options are and see thier own score aswell as the opponents.
+  <ul>
+   <li>
+    The options are very clear and are presented using large icons that enlarge when hovered over, making them easily visible and usable for the user.
+   </li>
+   <li>
+    The score and turns remaining counters are clearly displayed at the bottom of the page below the main game section.
+   </li>
+  </ul>
+ </li>
+</ol>
+
+### Returning visitors:
+<ol>
+ <li>
+  Quickly be able to get straight in to the game.
+   <ul> 
+    <li>
+     When 'Get Started!' is clicked the message is removed and the user can get straight in to the game.
+    </li>
+    <li>
+     When the end of game message is diplayed the user only has to click the 'Play Again!' and the user is ready to play again. 
+    </li>
+   </ul>
+ </li>
+ <li>
+  Be able to clearly see thier own score aswell as the opponents.
+  <ul>
+   <li>
+    All score counters are displayed at the bottom of the page, making it easy for the user to see their score, their opponents score and turns remaining.
+   </li>
+  </ul>
+ </li>
+</ol>
