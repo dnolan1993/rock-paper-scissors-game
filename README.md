@@ -330,7 +330,7 @@ The site has been tested on the following browsers:
   I confirmed my end of game message displayed when user play 10 rounds of the game and was removed and counters were reset when 'Play Again!' button is clicked.
  </li>
 
- ## UX Client Goals
+## UX Client Goals
 ### First time visitors:
 <ol>
  <li>
@@ -392,4 +392,126 @@ The site has been tested on the following browsers:
    </li>
   </ul>
  </li>
+</ol>
+
+## Funtionality Testing
+<ol>
+ <li>
+   Welcome message
+    <ul>
+     <li>
+      <a href="https://dnolan1993.github.io/rock-paper-scissors-game/">Load Game page</a> in web browser.
+     </li>
+     <li>
+      Ensure that the welcome message is display on load of webpage.
+     </li>
+     <li>
+      Use devtools to adjust screen sizes up and down to verify that the welcome message and its positioning are responsive.
+     </li>
+    </ul>
+  </li>
+  <li>
+   Welcome message 'Get Started!' button
+    <ul>
+     <li>
+     Click the 'Get Started!' button in the welcome message to verify it removes the welcome message to allow the user to clearly view the game page.
+     </li>
+     <li>
+      Use devtools to adjust screen sizes up and down to verify that the 'Get Started!' button and its positioning are responsive.
+     </li>
+    </ul>
+  </li>
+  <li>
+   Entire page responsiveness
+   <ul>
+    <li>
+     Use devtools to adjust screen sizes up and down to verify that the page and elements positioning are responsive.
+    </li>
+   </ul>
+  </li>
+  <li>
+   Game Icons
+    <ul>
+     <li>
+      Hover over each icon to verify that they enlarge individually as hovered over.
+     </li>
+     <li>
+      Click each icon to ensure that it select the correct outcome for the selection of the icon.
+     </li>
+     <li>
+      Use devtools to adjust screen sizes up and down to verify that the game icons and their positioning are responsive.
+     </li>
+   </ul>
+  </li>
+  <li>
+   Hidden Icons
+    <ul>
+     <li>
+      Play the game until 'Turns remaining' counter reaches 5 to ensure the icon display when intended.
+     </li>
+     <li>
+      Hover over each icon to verify that they enlarge individually as hovered over.
+     </li>
+     <li>
+      Click each icon to ensure that it select the correct outcome for the selection of the icon.
+     </li>
+     <li>
+      Complete the game and click the 'Play Again!' button to verify that the buttons are removed as intended.
+     </li>
+     <li>
+      Use devtools to adjust screen sizes up and down to verify that the hidden icons and their positioning are responsive.
+     </li>
+   </ul>
+  </li>
+  <li>
+   Result display
+    <ul>
+     <li>
+      Play the game a number of times to ensure that the opponents choice is random and chooses a different character.
+     </li>
+     <li>
+      Play the game a number of times to ensure that the result is the correct value 'You Win!' or 'You Lose!' depending on the characters chosen.
+     </li>
+     <li>
+      Play the game a number of times to ensure that text displayed is correct depending on the characters chosen, showing the correct information e.g. 'Rock beats Scissors'.
+     </li>
+     <li>
+      Use devtools to adjust screen sizes up and down to verify that the result display and its positioning are responsive.
+     </li>
+   </ul>
+  </li>
+  <li>
+   Score counters
+    <ul>
+     <li>
+      Ensure that counters have the correct value on page load, 'Your Score:0', 'Turns remaining:10' and 'Opponents Score:0'.
+     </li>
+     <li>
+      Play the game a number of times to ensure the 'Your Score:' counter increases by 1 each time a 'You Win!' outcome is displayed.
+     </li>
+     <li>
+      Play the game a number of times to ensure the 'Turns remaining:' counter reduces by 1 each time a character is played.
+     </li>
+     <li>
+      Play the game a number of times to ensure the 'Opponents Score:' counter increases by 1 each time a 'You Lose!' outcome is displayed.
+     </li>
+    </ul>
+  </li>
+  <li>
+   End of Game message
+   <ul>
+    <li>
+     Play the game until the 'Turns remaining:' counter has a value of 0 to ensure that the end of game message is displayed when intended. 
+    </li>
+    <li>
+     Ensure that the end of game is showing the current infornmation, your score, opponents score and the overall outcome. Perform this step multiple times to ensure consistency.
+    </li>
+    <li>
+     Click 'Play Again!' button to ensure it removes the end of game message, resets counters and removes hidden icons as intended.
+    </li>
+    <li>
+     Play the game until 'Turns remaining' counter reaches 5 again to ensure the hidden icon display again when intended.
+    </li>
+   </ul>
+  </li>
 </ol>
