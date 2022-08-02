@@ -286,8 +286,8 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
  </li>
   <ul>
    <li>
-    script.js result (Add screenshot)
-    <img src="" alt="">
+    script.js result
+    <img src="documentation/js-validation.png" alt="screenshot of JavaScript validation result for script.js">
    </li>
   </ul>
 
