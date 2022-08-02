@@ -104,22 +104,6 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
 ## Features
 ### Existing Features
 <ul>
- <li>Title/Heading
-  <ul>
-   <li>
-    The title displays what the game is to the user.
-   </li>
-   <li>
-    When hovered over the title enlarges to show the user they are selecting it.
-   </li>
-   <li>
-    When clicked the title will bring the user to a link to reload the game page.
-   </li>
-  </ul>
- </li>
-</ul>
-
-<ul>
  <li>
   Welcome message 
    <ul>
@@ -143,6 +127,12 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
    <ul>
     <li>
      The Game Title displays the game name at the top of the page, easily visible to the user.
+    </li>
+    <li>
+     When hovered over The Game Title enlarges to show the user they are selecting it.
+    </li>
+    <li>
+     When clicked The Game Title will follow a link to reload the game page.
     </li>
    </ul>
  </li>
