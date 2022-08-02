@@ -543,7 +543,7 @@ These solutions fixed the bugs on the page.
 To my knowledge, there are no unsolved bugs on the site.
 
 ## Lighthouse Summary results
-(Add Lighthouse summary screenshot here.)
+<img src="documentation/lighthouse-summary-results.png" alt="screenshot of Lighthouse Summary report for  game webpage">
 
 ## Deployment
 This site is hosted by GitHub Pages and deployed directly to the main branch. The deployed site will update if after new commits are made, they are pushed to GitHub pages using the "git push" command in the terminal. The Homepage is named index.html to ensure it deploys correctly through GitHub pages.
