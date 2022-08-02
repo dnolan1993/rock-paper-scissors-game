@@ -1,36 +1,31 @@
-// Global constant declarations
+//Global constant declarations
 const welcomeMessage = document.getElementById("welcome-message");
 const getStartedBtn = document.getElementById("get-started");
 const options = ["Rock", "Paper", "Scissors"];
-const youLoseMessage = "You Lose!"
-const youWinMessage = "You Win!"
-const youTieMessage = "It's a tie!"
 
-
-// Global variable declarations
+//Global variable declarations
 let turnsRemaining = 10;
 let yourCurrentScore = 0;
 let opponentsCurrentScore = 0;
-let opponentSelection = document.getElementById("opponents-selection");
-let overallOutcome = document.getElementById("overall-outcome");
+let opponentSelectionOutput = document.getElementById("opponents-selection");
+let opponentsChoice = document.getElementById("opponents-selection");
 let winLoseOrTie;
 let winLoseOrTieMessage;
 let characterSpecificMessage;
+let overallOutcome = document.getElementById("overall-outcome");
 
 
-// Event listener declarations
+
+//Event listener declarations
 getStartedBtn.addEventListener("click", function () {
     welcomeMessage.style.display = "none";
 });
 
-// Function declarations
-// Wait for the DOM to finish loading before running the game
-// and its welcome message
-// Get character buttons and assigns event listeners to them
+//Function declarations
+//Wait for the DOM to finish loading before running the game and its welcome message
+//Get character buttons and assigns event listeners to them
 function gamePlayClick() {
     document.addEventListener("DOMContentLoaded", function () {
-        overallOutcome.innerText = "";
-        opponentSelection.innerText = "";
         let buttons = document.getElementsByTagName("button");
         for (let button of buttons) {
             button.addEventListener("click", function () {
@@ -51,13 +46,13 @@ function gamePlayClick() {
     });
 }
 
-// Function for opponents randomly selected play
+//Function for opponents randomly selected play
 function computerSelection() {
     let randomSelection = options[Math.floor(Math.random() * options.length)];
     return randomSelection;
 }
 
-// Function to select correct outcome display function to run
+//Function to select correct outcome display function to run
 function runGame(selection) {
     if (selection === "rock") {
         displayOpponentsChoice();
@@ -77,116 +72,178 @@ function runGame(selection) {
     }
 }
 
-// Outcome function to display outcome if user selects rock
-function displayRockOutcome(opponentPlayed) {
-    if (opponentPlayed === "Rock") {
+//Outcome function to display outcome if user selects rock
+function displayRockOutcome() {
+    if (opponentsChoice.innerHTML === "<p>Opponent Played: Rock</p>") {
         winLoseOrTie = "tie";
         winLoseOrTieMessage = "It's a tie!";
         characterSpecificMessage = "";
-        displayResult(opponentSelection);
-    } else if (opponentPlayed === "Paper") {
+        displayResult()
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Paper</p>") {
         winLoseOrTie = "loss";
         winLoseOrTieMessage = "You Lose!";
         characterSpecificMessage = "Paper beats Rock!";
-        displayResult(opponentSelection);
-    } else if (opponentPlayed === "Scissors") {
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Scissors</p>") {
         winLoseOrTie = "win";
         winLoseOrTieMessage = "You Win!";
         characterSpecificMessage = "Rock beats Scissors!";
-        displayResult(opponentSelection);
-    } else if (opponentPlayed === "John Wick") {
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: John Wick</p>") {
         winLoseOrTie = "win";
         winLoseOrTieMessage = "You Win!";
         characterSpecificMessage = "Rock breaks John Wicks pencil!";
-        displayResult(opponentSelection);
-    } else if (opponentPlayed === "Chuck Norris") {
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Chuck Norris</p>") {
         winLoseOrTie = "loss";
         winLoseOrTieMessage = "You Lose!";
         characterSpecificMessage = "Because Chuck Norris.";
-        displayResult(opponentSelection);
-    }
+        displayResult();
+}
 }
 
-// Outcome function to display outcome if user selects paper
+//Outcome function to display outcome if user selects paper
 function displayPaperOutcome() {
-    if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Rock</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Win!</p><p>Paper beats Rock!</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Paper</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>It's a tie!</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Scissors</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Scissors beats Paper!</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: John Wick</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Lose!</p><p>John Wick tears Paper!</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Chuck Norris</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Because Chuck Norris.</p>";
+    if (opponentsChoice.innerHTML === "<p>Opponent Played: Rock</p>") {
+        winLoseOrTie = "win";
+        winLoseOrTieMessage = "You Win!";
+        characterSpecificMessage = "Paper beats Rock!";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Paper</p>") {
+        winLoseOrTie = "tie";
+        winLoseOrTieMessage = "It's a tie!";
+        characterSpecificMessage = "";
+        displayResult()
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Scissors</p>") {
+        winLoseOrTie = "loss";
+        winLoseOrTieMessage = "You Lose!";
+        characterSpecificMessage = "Scissors beats Paper!";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: John Wick</p>") {
+        winLoseOrTie = "loss";
+        winLoseOrTieMessage = "You Lose!";
+        characterSpecificMessage = "John Wick tears Paper!";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Chuck Norris</p>") {
+        winLoseOrTie = "loss";
+        winLoseOrTieMessage = "You Lose!";
+        characterSpecificMessage = "Because Chuck Norris.";
+        displayResult();
     }
 }
 
-// Outcome function to display outcome if user selects scissors
+//Outcome function to display outcome if user selects scissors
 function displayScissorsOutcome() {
-    if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Rock</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Rock beats Scissors!</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Paper</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Win!</p><p>Scissors beats Paper!</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Scissors</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>It's a tie!</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: John Wick</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Win!</p><p>John Wick doesn't play with Scissors!.</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Chuck Norris</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Because Chuck Norris.</p>";
+    if (opponentsChoice.innerHTML === "<p>Opponent Played: Rock</p>") {
+        winLoseOrTie = "loss";
+        winLoseOrTieMessage = "You Lose!";
+        characterSpecificMessage = "Rock beats Scissors!";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Paper</p>") {
+        winLoseOrTie = "win";
+        winLoseOrTieMessage = "You Win!";
+        characterSpecificMessage = "Scissors beats Paper!";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Scissors</p>") {
+        winLoseOrTie = "tie";
+        winLoseOrTieMessage = "It's a tie!";
+        characterSpecificMessage = "";
+        displayResult()
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: John Wick</p>") {
+        winLoseOrTie = "win";
+        winLoseOrTieMessage = "You Win!";
+        characterSpecificMessage = "John Wick doesn't play with Scissors!";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Chuck Norris</p>") {
+        winLoseOrTie = "loss";
+        winLoseOrTieMessage = "You Lose!";
+        characterSpecificMessage = "Because Chuck Norris.";
+        displayResult();
     }
 }
 
-// Outcome function to display outcome if user selects john wick
+//Outcome function to display outcome if user selects john wick
 function displayJohnWickOutcome() {
-    if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Rock</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Rock breaks John Wicks pencil!</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Paper</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Win!</p><p>John Wick tears Paper!</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Scissors</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Lose!</p><p>John Wick doesn't play with Scissors!</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: John Wick</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>It's a tie!</p><p>Because only John Wick can content with John Wick.</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Chuck Norris</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because John Wick is a man of focus.</p>";
+    if (opponentsChoice.innerHTML === "<p>Opponent Played: Rock</p>") {
+        winLoseOrTie = "loss";
+        winLoseOrTieMessage = "You Lose!";
+        characterSpecificMessage = "Rock breaks John Wicks pencil!";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Paper</p>") {
+        winLoseOrTie = "win";
+        winLoseOrTieMessage = "You Win!";
+        characterSpecificMessage = "John Wick tears Paper!";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Scissors</p>") {
+        winLoseOrTie = "loss";
+        winLoseOrTieMessage = "You Lose!";
+        characterSpecificMessage = "John Wick doesn't play with Scissors!";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: John Wick</p>") {
+        winLoseOrTie = "tie";
+        winLoseOrTieMessage = "It's a tie!";
+        characterSpecificMessage = "Because only John Wick can content with John Wick.";
+        displayResult()
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Chuck Norris</p>") {
+        winLoseOrTie = "win";
+        winLoseOrTieMessage = "You Win!";
+        characterSpecificMessage = "Because John Wick is a man of focus.";
+        displayResult();
     }
 }
 
-// Outcome function to display outcome if user selects chuck norris
+//Outcome function to display outcome if user selects chuck norris
 function displayChuckNorrisOutcome() {
-    if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Rock</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because Chuck Norris.</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Paper</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because Chuck Norris.</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Scissors</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Win!</p><p>Because Chuck Norris.</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: John Wick</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Because John Wick is a man of focus.</p>";
-    } else if (document.getElementById("opponents-selection").innerHTML === "<p>Opponent Played: Chuck Norris</p>") {
-        overallOutcome.innerHTML = "<p id = 'result-needed'>You Lose!</p><p>Two Chuck Norris' has created a second Big Bang!</p>";
+    if (opponentsChoice.innerHTML === "<p>Opponent Played: Rock</p>") {
+        winLoseOrTie = "win";
+        winLoseOrTieMessage = "You Win!";
+        characterSpecificMessage = "Because Chuck Norris.";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Paper</p>") {
+        winLoseOrTie = "win";
+        winLoseOrTieMessage = "You Win!";
+        characterSpecificMessage = "Because Chuck Norris.";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Scissors</p>") {
+        winLoseOrTie = "win";
+        winLoseOrTieMessage = "You Win!";
+        characterSpecificMessage = "Because Chuck Norris.";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: John Wick</p>") {
+        winLoseOrTie = "loss";
+        winLoseOrTieMessage = "You Lose!";
+        characterSpecificMessage = "Because John Wick is a man of focus.";
+        displayResult();
+    } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Chuck Norris</p>") {
+        winLoseOrTie = "loss";
+        winLoseOrTieMessage = "You Lose!";
+        characterSpecificMessage = "Two Chuck Norris' has created a second Big Bang!";
+        displayResult();
     }
 }
 
-// Outcome function to display opponents chosen character
+//Outcome function to display opponents chosen character
 function displayOpponentsChoice() {
     let opponentPlayed = computerSelection();
-    opponentSelection.innerHTML = `<p>Opponent Played: ${opponentPlayed}</p>`;
-    displayRockOutcome(opponentPlayed)
-    return opponentSelection;
+    opponentSelectionOutput.innerHTML = `<p>Opponent Played: ${opponentPlayed}</p>`;
+    return opponentSelectionOutput;
 }
 
-function displayResult(opponentSelection) {
-    overallOutcome.innerHTML =`
+//Function to display result message with outcome of round
+function displayResult() {
+    overallOutcome.innerHTML = `
     <p data-type='${winLoseOrTie}' id = 'result-needed'>
     ${winLoseOrTieMessage}</p><p>${characterSpecificMessage}</p>`;
+
 }
 
-// Function for counter to display turns remaining in the game
+
+//Function for counter to display turns remaining in the game
 function displayTurnsRemaining() {
     document.getElementById("remaining-turns").innerText = --turnsRemaining;
 }
 
-// Function for counter to display your score in the game
+//Function for counter to display your score in the game
 function displayYourScore() {
     let resultNeeded = document.getElementById("result-needed").innerText;
     if (resultNeeded === "You Win!") {
@@ -194,7 +251,7 @@ function displayYourScore() {
     }
 }
 
-// Function for counter to display opponents score in the game
+//Function for counter to display opponents score in the game
 function displayOpponentScore() {
     let resultNeeded = document.getElementById("result-needed").innerText;
     if (resultNeeded === "You Lose!") {
@@ -202,7 +259,7 @@ function displayOpponentScore() {
     }
 }
 
-// Function to make hidden icons visible to user at game mid-point
+//Function to make hidden icons visible to user at game mid-point
 function displayHiddenChoices() {
     let hiddenIcons = document.getElementById("hidden-buttons");
     if (document.getElementById("remaining-turns").innerText <= 5) {
@@ -211,7 +268,7 @@ function displayHiddenChoices() {
     }
 }
 
-// Function to display end of game message displaying overall outcome of game
+//Function to display end of game message displaying overall outcome of game
 function endOfGame() {
     let endOfGameMessage = document.getElementById("end-of-game-message");
     let yourFinalScore = parseInt(document.getElementById("your-current-score").innerText);
@@ -231,7 +288,7 @@ function endOfGame() {
     }
 }
 
-// Function for reseting game after 'Play Again!' button is clicked
+//Function for reseting game after 'Play Again!' button is clicked
 function playAgain() {
     let playAgainBtn = document.getElementById("play-again");
     playAgainBtn.addEventListener("click", function () {
@@ -249,5 +306,5 @@ function playAgain() {
     });
 }
 
-// Function calls
+//Function calls
 gamePlayClick();
