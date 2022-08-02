@@ -1,9 +1,9 @@
-//Global constant declarations
+// Global constant declarations
 const welcomeMessage = document.getElementById("welcome-message");
 const getStartedBtn = document.getElementById("get-started");
 const options = ["Rock", "Paper", "Scissors"];
 
-//Global variable declarations
+// Global variable declarations
 let turnsRemaining = 10;
 let yourCurrentScore = 0;
 let opponentsCurrentScore = 0;
@@ -16,15 +16,15 @@ let overallOutcome = document.getElementById("overall-outcome");
 
 
 
-//Event listener declarations
+// Event listener declarations
+// Get get-started button and assign event listener to it
+// Change display value of welcome-message when clicked
 getStartedBtn.addEventListener("click", function () {
     welcomeMessage.style.display = "none";
 });
 
-//Function declarations
-//Wait for the DOM to finish loading before running the game and its welcome message
-//Get character buttons and assigns event listeners to them
-function gamePlayClick() {
+// Wait for the DOM to finish loading before running the game and its welcome message
+// Get character buttons and assigns event listeners to them
     document.addEventListener("DOMContentLoaded", function () {
         let buttons = document.getElementsByTagName("button");
         for (let button of buttons) {
@@ -38,21 +38,20 @@ function gamePlayClick() {
                     displayHiddenChoices();
                     endOfGame();
                     playAgain();
-                } else if (this.getAttribute("data-type") === "get-started") {
-
                 }
             });
         }
     });
-}
 
-//Function for opponents randomly selected play
+// Creates a random number assignd to index of options
+// Creates a random choice for the computer to play
 function computerSelection() {
     let randomSelection = options[Math.floor(Math.random() * options.length)];
     return randomSelection;
 }
 
-//Function to select correct outcome display function to run
+// Selects to correct output when button is clicked
+// Calls the opponentsChoice function based on outcome
 function runGame(selection) {
     if (selection === "rock") {
         displayOpponentsChoice();
@@ -72,7 +71,7 @@ function runGame(selection) {
     }
 }
 
-//Outcome function to display outcome if user selects rock
+// Selects response to computers selection based on 'Rock' being clicked
 function displayRockOutcome() {
     if (opponentsChoice.innerHTML === "<p>Opponent Played: Rock</p>") {
         winLoseOrTie = "tie";
@@ -102,7 +101,7 @@ function displayRockOutcome() {
 }
 }
 
-//Outcome function to display outcome if user selects paper
+// Selects response to computers selection based on 'Paper' being clicked
 function displayPaperOutcome() {
     if (opponentsChoice.innerHTML === "<p>Opponent Played: Rock</p>") {
         winLoseOrTie = "win";
@@ -132,7 +131,7 @@ function displayPaperOutcome() {
     }
 }
 
-//Outcome function to display outcome if user selects scissors
+// Selects response to computers selection based on 'Scissors' being clicked
 function displayScissorsOutcome() {
     if (opponentsChoice.innerHTML === "<p>Opponent Played: Rock</p>") {
         winLoseOrTie = "loss";
@@ -162,7 +161,7 @@ function displayScissorsOutcome() {
     }
 }
 
-//Outcome function to display outcome if user selects john wick
+// Selects response to computers selection based on 'John Wick' being clicked
 function displayJohnWickOutcome() {
     if (opponentsChoice.innerHTML === "<p>Opponent Played: Rock</p>") {
         winLoseOrTie = "loss";
@@ -192,7 +191,7 @@ function displayJohnWickOutcome() {
     }
 }
 
-//Outcome function to display outcome if user selects chuck norris
+// Selects response to computers selection based on 'Chuck Norris' being clicked
 function displayChuckNorrisOutcome() {
     if (opponentsChoice.innerHTML === "<p>Opponent Played: Rock</p>") {
         winLoseOrTie = "win";
@@ -222,14 +221,16 @@ function displayChuckNorrisOutcome() {
     }
 }
 
-//Outcome function to display opponents chosen character
+// Displays outcome for opponent 
+// Calls computers random selection
 function displayOpponentsChoice() {
     let opponentPlayed = computerSelection();
     opponentSelectionOutput.innerHTML = `<p>Opponent Played: ${opponentPlayed}</p>`;
     return opponentSelectionOutput;
 }
 
-//Function to display result message with outcome of round
+// Displays result message with outcome of round
+// Based on opponent and user selection
 function displayResult() {
     overallOutcome.innerHTML = `
     <p data-type='${winLoseOrTie}' id = 'result-needed'>
@@ -238,12 +239,14 @@ function displayResult() {
 }
 
 
-//Function for counter to display turns remaining in the game
+// Displays turns remaining counter in the game
+// Decreases counter value by 1 each time user plays a character
 function displayTurnsRemaining() {
     document.getElementById("remaining-turns").innerText = --turnsRemaining;
 }
 
-//Function for counter to display your score in the game
+// Displays your score counter in the game
+// Increases counter value by 1 each time user wins a round
 function displayYourScore() {
     let resultNeeded = document.getElementById("result-needed").innerText;
     if (resultNeeded === "You Win!") {
@@ -251,7 +254,8 @@ function displayYourScore() {
     }
 }
 
-//Function for counter to display opponents score in the game
+// Displays opponents score counter in the game
+// Increases counter value by 1 each time user loses a round
 function displayOpponentScore() {
     let resultNeeded = document.getElementById("result-needed").innerText;
     if (resultNeeded === "You Lose!") {
@@ -259,7 +263,8 @@ function displayOpponentScore() {
     }
 }
 
-//Function to make hidden icons visible to user at game mid-point
+// Changes hidden-buttons visibility value at game mid point
+// Adds 2 playable icons to game when turns remaining = 5
 function displayHiddenChoices() {
     let hiddenIcons = document.getElementById("hidden-buttons");
     if (document.getElementById("remaining-turns").innerText <= 5) {
@@ -268,7 +273,9 @@ function displayHiddenChoices() {
     }
 }
 
-//Function to display end of game message displaying overall outcome of game
+// Displays end of game message displaying overall outcome of game
+// Changes end of game message visibility value at end of game
+// Game ends when turns remaining = 0
 function endOfGame() {
     let endOfGameMessage = document.getElementById("end-of-game-message");
     let yourFinalScore = parseInt(document.getElementById("your-current-score").innerText);
@@ -288,7 +295,10 @@ function endOfGame() {
     }
 }
 
-//Function for reseting game after 'Play Again!' button is clicked
+// Get play-again button and assign event listener to it
+// Change display value of end of game message when clicked
+// Resets game page when 'Play Again!' button is clicked
+// Resets counters values to original values
 function playAgain() {
     let playAgainBtn = document.getElementById("play-again");
     playAgainBtn.addEventListener("click", function () {
@@ -305,6 +315,3 @@ function playAgain() {
         document.getElementById("opponents-current-score").innerText = opponentsCurrentScore;
     });
 }
-
-//Function calls
-gamePlayClick();
