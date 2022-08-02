@@ -77,7 +77,7 @@ function displayRockOutcome() {
         winLoseOrTie = "tie";
         winLoseOrTieMessage = "It's a tie!";
         characterSpecificMessage = "";
-        displayResult()
+        displayResult();
     } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Paper</p>") {
         winLoseOrTie = "loss";
         winLoseOrTieMessage = "You Lose!";
@@ -112,7 +112,7 @@ function displayPaperOutcome() {
         winLoseOrTie = "tie";
         winLoseOrTieMessage = "It's a tie!";
         characterSpecificMessage = "";
-        displayResult()
+        displayResult();
     } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Scissors</p>") {
         winLoseOrTie = "loss";
         winLoseOrTieMessage = "You Lose!";
@@ -147,7 +147,7 @@ function displayScissorsOutcome() {
         winLoseOrTie = "tie";
         winLoseOrTieMessage = "It's a tie!";
         characterSpecificMessage = "";
-        displayResult()
+        displayResult();
     } else if (opponentsChoice.innerHTML === "<p>Opponent Played: John Wick</p>") {
         winLoseOrTie = "win";
         winLoseOrTieMessage = "You Win!";
@@ -182,7 +182,7 @@ function displayJohnWickOutcome() {
         winLoseOrTie = "tie";
         winLoseOrTieMessage = "It's a tie!";
         characterSpecificMessage = "Because only John Wick can content with John Wick.";
-        displayResult()
+        displayResult();
     } else if (opponentsChoice.innerHTML === "<p>Opponent Played: Chuck Norris</p>") {
         winLoseOrTie = "win";
         winLoseOrTieMessage = "You Win!";

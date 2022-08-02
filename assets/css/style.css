@@ -197,6 +197,11 @@ button {
     margin-top: 5%;
     font-size: 150%;
     text-align: center;
+    
+}
+
+#opponents-selection {
+    border-top: solid #E7F6F2 1px;
 }
 
 #overall-outcome {
@@ -269,8 +274,20 @@ button {
 
 /* For medium-large screen sizes from 991px wide and down  */
 @media screen and (max-width: 991px) {
+    .full-game {
+        height: fit-content;
+    }
+
     #end-of-game-message {
         height: 42.5%;
+    }
+
+    .button-icons span {
+        bottom: -50%;
+    }
+
+    .game-result div {
+        margin-top: 7.5%;
     }
 }
 
@@ -305,9 +322,20 @@ button {
         width: 80%;
     }
 
+    #hidden-buttons {
+        margin-top: 20%;
+    }
+
     #end-of-game-message {
         width: 90%;
         height: 45%;
+    }
+}
+
+/* For small-medium screen sizes from 682px wide and down  */
+@media screen and (max-width: 682px) {
+    .game-result div {
+        margin-top: 10%;
     }
 }
 
@@ -344,7 +372,18 @@ button {
     }
 
     #hidden-buttons {
-        margin-top: 17.5%;
+        margin-top: 22.5%;
+    }
+}
+
+/* For small screen sizes from 510px wide and down  */
+@media screen and (max-width: 510px) {
+    #hidden-buttons {
+        margin-top: 25%;
+    }
+
+    .game-result div {
+        margin-top: 12.5%;
     }
 }
 
@@ -362,21 +401,17 @@ button {
         width: 40%;
     }
 
-    .full-game {
-        height: 570px;
-    }
-
     .button-icons button {
         margin-left: 5%;
         margin-right: 5%;
     }
 
     #hidden-buttons {
-        margin-top: 20%;
+        margin-top: 27.5%;
     }
 
-    .game-result {
-        margin-top: 5%;
+    .game-result div {
+        margin-top: 15%;
     }
 
     .game-scores span {
@@ -416,8 +451,18 @@ button {
         height: 170px;
     }
 
+    .button-icons span {
+        bottom: 35%;
+        left: 105%
+    }
+
     #hidden-buttons {
         margin-top: 30%;
+    }
+
+    #hidden-buttons span {
+        bottom: 35%;
+        left: 125%
     }
 }
 
