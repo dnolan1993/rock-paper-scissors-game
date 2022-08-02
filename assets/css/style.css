@@ -131,6 +131,9 @@ body {
 }
 
 /* style of interactive buttons */
+button {
+    position: relative;
+}
 
 .button-icons {
     display: block;
@@ -144,6 +147,14 @@ body {
 .button-icons button {
     margin-left: 7.5%;
     margin-right: 7.5%;
+}
+
+.button-icons span {
+    position: absolute;
+    bottom: -60%;
+    color: #E7F6F2;
+    left: 27.5%;
+    font-size: 0.9rem
 }
 
 .icon i {
@@ -162,6 +173,14 @@ body {
     margin-top: 7.5%;
 }
 
+#hidden-buttons span{
+    position: absolute;
+    bottom: -65%;
+    color: #E7F6F2;
+    left: 2%;
+    font-size: 0.9rem
+}
+
 #hidden-buttons button {
     margin-left: 7.5%;
     margin-right: 7.5%;
@@ -175,7 +194,7 @@ body {
 /* opponents choice and game result sytling section */
 
 .game-result div {
-    margin-top: 2.5%;
+    margin-top: 5%;
     font-size: 150%;
     text-align: center;
 }
