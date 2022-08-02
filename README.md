@@ -41,15 +41,15 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
     <li>
         Desktop Wireframe
     </li>
-<img src="assets/images/wireframes/rock-paper-scissors-desktop-wireframe.png" alt="Wireframe design for desktop screen">
+<img src="wireframes/rock-paper-scissors-desktop-wireframe.png" alt="Wireframe design for desktop screen">
     <li>
         Tablet Wireframe
     </li>
-<img src="assets/images/wireframes/rock-paper-scissors-tablet-wireframe.png" alt="Wireframe design for tablet screen">
+<img src="wireframes/rock-paper-scissors-tablet-wireframe.png" alt="Wireframe design for tablet screen">
     <li>
         Phone Wireframe
     </li>
-<img src="assets/images/wireframes/rock-paper-scissors-iphone-wireframe.png" alt="Wireframe design for phone screen">
+<img src="wireframes/rock-paper-scissors-iphone-wireframe.png" alt="Wireframe design for phone screen">
 </ul>
 
 ### Colour Scheme
