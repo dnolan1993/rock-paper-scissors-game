@@ -25,23 +25,23 @@ getStartedBtn.addEventListener("click", function () {
 
 // Wait for the DOM to finish loading before running the game and its welcome message
 // Get character buttons and assigns event listeners to them
-    document.addEventListener("DOMContentLoaded", function () {
-        let buttons = document.getElementsByTagName("button");
-        for (let button of buttons) {
-            button.addEventListener("click", function () {
-                if (this.getAttribute("data-role") === "character") {
-                    let selection = this.getAttribute("data-type");
-                    runGame(selection);
-                    displayTurnsRemaining();
-                    displayYourScore();
-                    displayOpponentScore();
-                    displayHiddenChoices();
-                    endOfGame();
-                    playAgain();
-                }
-            });
-        }
-    });
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByTagName("button");
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            if (this.getAttribute("data-role") === "character") {
+                let selection = this.getAttribute("data-type");
+                runGame(selection);
+                displayTurnsRemaining();
+                displayYourScore();
+                displayOpponentScore();
+                displayHiddenChoices();
+                endOfGame();
+                playAgain();
+            }
+        });
+    }
+});
 
 // Creates a random number assignd to index of options
 // Creates a random choice for the computer to play
@@ -98,7 +98,7 @@ function displayRockOutcome() {
         winLoseOrTieMessage = "You Lose!";
         characterSpecificMessage = "Because Chuck Norris.";
         displayResult();
-}
+    }
 }
 
 // Selects response to computers selection based on 'Paper' being clicked
@@ -306,7 +306,7 @@ function playAgain() {
         document.getElementById("opponents-selection").innerText = "";
         document.getElementById("end-of-game-message").style.display = "none";
         document.getElementById("hidden-buttons").style.visibility = "hidden";
-        options.splice(3, 2);  
+        options.splice(3, 2);
         turnsRemaining = 10;
         document.getElementById("remaining-turns").innerText = turnsRemaining;
         yourCurrentScore = 0;

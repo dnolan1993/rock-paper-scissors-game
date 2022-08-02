@@ -173,7 +173,7 @@ button {
     margin-top: 7.5%;
 }
 
-#hidden-buttons span{
+#hidden-buttons span {
     position: absolute;
     bottom: -65%;
     color: #E7F6F2;
@@ -197,7 +197,7 @@ button {
     margin-top: 5%;
     font-size: 150%;
     text-align: center;
-    
+
 }
 
 #opponents-selection {
