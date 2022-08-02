@@ -268,6 +268,7 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
   <ul>
    <li>
     index.html result
+    <br>
     <img src="documentation/html-validation.png" alt="screenshot of HTML validation result for index.html">
    </li>
   </ul>
@@ -277,19 +278,22 @@ The ideal client for this page is anyone that wants to pass some time in a fun w
   <ul>
    <li>
     style.css result
+    <br>
     <img src="documentation/css-validation.png" alt="screenshot of CSS validation result for style.css">
    </li>
   </ul>
-</ul>
+
 <li>
  <a href="https://jshint.com/" target="_blank">JavaScript Validator</a>
  </li>
   <ul>
    <li>
     script.js result
+    <br>
     <img src="documentation/js-validation.png" alt="screenshot of JavaScript validation result for script.js">
    </li>
   </ul>
+</ul>
 
 ### Browser Testing
 The site has been tested on the following browsers:

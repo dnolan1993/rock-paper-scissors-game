@@ -102,6 +102,16 @@ body {
     position: relative;
 }
 
+.full-game a {
+    text-decoration: none;
+    color: #E7F6F2;
+}
+
+.full-game a h1:hover {
+    transform: scale(1.2);
+    transition: transform 150ms ease-in-out;
+}
+
 .logo {
     text-align: center;
 }
